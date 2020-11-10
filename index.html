@@ -6,7 +6,7 @@
   <meta charset='utf-8'>
 
   <!-- Title -->
-  <title>Project Team ##: Topic, DS 4200 F20</title>
+  <title>Project Team 9: Environment, DS 4200 F20</title>
   
   <!-- CSS Styling -->
   <link rel='stylesheet' href='style.css'>
@@ -26,13 +26,13 @@
 <body>
 
   <!-- Update this with your GitHub repo URL -->
-  <span id='forkongithub'><a href='https://github.com/NEU-DS-4200-F20-Staff/Project'>Fork me on GitHub</a></span>
+  <span id='forkongithub'><a href='https://github.com/NEU-DS-4200-F20/project-group-9-environmental.git'>Fork me on GitHub</a></span>
 
   <!-- Writeup -->
   <div class='content-column'>
-   <h1>Project Team ##: Topic, DS4200 F20</h1>
+   <h1>Project Team #9: Environment, DS4200 F20</h1>
     
-    <p><strong>Student One</strong>, <strong>Student Two</strong>, <strong>Student Three</strong></p>
+    <p><strong>Derek Brenner</strong>, <strong>Julia Nitschke</strong>, <strong>Samyak Jain</strong></p>
     
     <p>Service-Learning Course Project as part of
 	<a href='https://canvas.instructure.com/courses/1781732'>DS 4200 F20: Information Visualization</a>, 
@@ -43,7 +43,15 @@
     
     <h1>Abstract</h1>
     
-    <p>Replace with your paper abstract.</p>
+    <p>This project is about the relationship between economic behavior, education, 
+      and outcomes, and particularly their relation to environmental concern. The 
+      idea that people should become more aware of environmental issues is not 
+      sufficient; we need pro-environmental action. We are particularly interested 
+      in what kind of information impacts people's perceptions of their actions, 
+      and the the trigger points that make people act on their knowledge and 
+      awareness. Our partner is a research team at Northeastern led by economics 
+      professor Dr. Venkatesan. The data used in this project is from a survey 
+      conducted by Dr. Venkatesan and a group of students.</p>
 
     
     <h1>Visualization</h1>
@@ -55,20 +63,9 @@
   
   <!-- Visualization goes here -->
   <div class='vis-holder'>
+    <div class='table-holder' id='table'></div>
     <!-- Change viewbox to whatever you want, e.g., '0 0 1000 6000' This determines your aspect ratio and coordinate system -->    
     <!-- Delete all the sample SVG code below after the viewbox to before the closing tag. Populate this part of the SVG with D3. -->
-    <svg id='vis-svg-1'
-      preserveAspectRatio='xMidYMid meet' class='vis-svg' viewBox='0 0 1000 1000' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
-      
-      
-      <text x='30%' y='35%' text-anchor='middle'>A</text>
-      <text x='70%' y='35%' text-anchor='middle'>B</text>
-      <rect x='20%' y='40%' width='20%' height='20%' fill='yellow'></rect>
-      <circle cx='70%' cy='50%' r='10%' fill='blue'></circle>
-      
-      
-    <!-- Don't delete the closing tag! -->
-    </svg>
   </div>
   
   <!-- Further writeup -->
@@ -109,5 +106,6 @@
   <!-- Scripts at the end avoid need for dealing with async, defer, or onload event handlers -->
   <script src='lib/d3.v6.1.1/d3.min.js'></script>
   <script src='js/visualization.js'></script>
+  <script src='js/table.js'></script>
 </body>
 </html>
