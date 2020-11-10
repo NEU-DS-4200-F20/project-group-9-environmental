@@ -16,8 +16,8 @@ function table() {
       height = 500 - margin.top - margin.bottom,
       selectableElements = d3.select(null),
       dispatcher;
-  
-    // Create the chart by adding a table to the div with the id 
+
+    // Create the chart by adding a table to the div with the id
     // specified by the selector using the given data
     function chart(selector, data) {
       // Reference: https://www.w3schools.com/tags/tag_tbody.asp
@@ -29,14 +29,14 @@ function table() {
         tbody = table.append("tbody");
 
       let columns = Object.keys(data[0]);
-    
+
       let header = thead.append("tr")
         .selectAll("th")
         .data(columns)
         .enter()
         .append("th")
         .text(d => d);
-    
+
       let rows = tbody.selectAll("tr")
         .data(data)
         .enter()
@@ -86,86 +86,86 @@ function table() {
         .enter()
         .append("td")
         .html((d) => d.value);
-  
+
       return chart;
     }
-  
+
     // The x-accessor from the datum
     function X(d) {
       return xScale(xValue(d));
     }
-  
+
     // The y-accessor from the datum
     function Y(d) {
       return yScale(yValue(d));
     }
-  
+
     chart.margin = function (_) {
       if (!arguments.length) return margin;
       margin = _;
       return chart;
     };
-  
+
     chart.width = function (_) {
       if (!arguments.length) return width;
       width = _;
       return chart;
     };
-  
+
     chart.height = function (_) {
       if (!arguments.length) return height;
       height = _;
       return chart;
     };
-  
+
     chart.x = function (_) {
       if (!arguments.length) return xValue;
       xValue = _;
       return chart;
     };
-  
+
     chart.y = function (_) {
       if (!arguments.length) return yValue;
       yValue = _;
       return chart;
     };
-  
+
     chart.xLabel = function (_) {
       if (!arguments.length) return xLabelText;
       xLabelText = _;
       return chart;
     };
-  
+
     chart.yLabel = function (_) {
       if (!arguments.length) return yLabelText;
       yLabelText = _;
       return chart;
     };
-  
+
     chart.yLabelOffset = function (_) {
       if (!arguments.length) return yLabelOffsetPx;
       yLabelOffsetPx = _;
       return chart;
     };
-  
+
     // Gets or sets the dispatcher we use for selection events
     chart.selectionDispatcher = function (_) {
       if (!arguments.length) return dispatcher;
       dispatcher = _;
       return chart;
     };
-  
-    // Given selected data from another visualization 
+
+    // Given selected data from another visualization
     // select the relevant elements here (linking)
     chart.updateSelection = function (selectedData) {
       if (!arguments.length) return;
-  
+
       // Select an element if its datum was selected
       selectableElements.classed('selected', d =>
         selectedData.includes(d)
       );
-  
+
     };
-  
+
     return chart;
   }
