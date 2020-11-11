@@ -34,7 +34,7 @@ function piechart() {
       var g = svg.append("g")
                         .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-
+      console.log(svg)
       // Using tutorial from https://www.tutorialsteacher.com/d3js/create-pie-chart-using-d3js for pie chart
       var color = d3.scaleOrdinal(['#4daf4a','#377eb8','#ff7f00','#984ea3','#e41a1c']);
 
@@ -73,7 +73,6 @@ function piechart() {
          .text("Percentage of Students that Recycle")
          .attr("class", "title")
        }
-    return chart
 
         // Gets or sets the dispatcher we use for selection events
         chart.selectionDispatcher = function (_) {

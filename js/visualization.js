@@ -26,6 +26,7 @@
     const dispatchString = 'selectionUpdated';
 
     let dataPie = piechart()
+    .selectionDispatcher(d3.dispatch(dispatchString))
     ('#piechart', data);
 
   });
