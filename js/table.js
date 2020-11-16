@@ -7,9 +7,9 @@ function table() {
     // Based on Mike Bostock's margin convention
     // https://bl.ocks.org/mbostock/3019563
     let margin = {
-        top: 60,
-        left: 50,
-        right: 30,
+        top: 150,
+        left: 25,
+        right: 125,
         bottom: 20
       },
       width = 500 - margin.left - margin.right,

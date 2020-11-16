@@ -7,14 +7,14 @@ function piechart() {
     // Based on Mike Bostock's margin convention
     // https://bl.ocks.org/mbostock/3019563
     let margin = {
-        top: 60,
+        top: 0,
         left: 50,
-        right: 30,
-        bottom: 20
+        right: 25,
+        bottom: 0
       },
       width = 500 - margin.left - margin.right,
-      height = 500 - margin.top - margin.bottom,
-      radius = Math.min(width, height) / 2;
+      height = 500 - margin.top- margin.bottom,
+      radius = 100;
       selectableElements = d3.select(null)
       //dispatcher
       ;
@@ -32,14 +32,14 @@ function piechart() {
           .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
       var g = svg.append("g")
-                        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+                        .attr("transform", "translate(" + ((width / 2) - 25) + "," + height / 4 + ")");
 
       console.log(svg)
       // Using tutorial from https://www.tutorialsteacher.com/d3js/create-pie-chart-using-d3js for pie chart
-      var color = d3.scaleOrdinal(['#4daf4a','#377eb8','#ff7f00','#984ea3','#e41a1c']);
+      var color = d3.scaleOrdinal(['#4daf4a','#FF0000']);
 
       var pie = d3.pie().value(function(d) {
-          return d.percent;
+          return d.Count;
         });
 
       var path = d3.arc()
@@ -57,7 +57,7 @@ function piechart() {
 
       arc.append("path")
          .attr("d", path)
-         .attr("fill", function(d) { return color(d.data.browser); });
+         .attr("fill", function(d) { return color(d.data.Name); });
 
       console.log(arc)
 
@@ -65,13 +65,16 @@ function piechart() {
          .attr("transform", function(d) {
                   return "translate(" + label.centroid(d) + ")";
           })
-         .text(function(d) { return d.data.browser; });
+         .text(function(d) { return d.data.Name; })
+         .attr("font-size","10px");
 
       svg.append("g")
-         .attr("transform", "translate(" + (width / 2 - 120) + "," + 20 + ")")
+         .attr("transform", "translate(" + (width / 2 - 125) + "," + 20 + ")")
          .append("text")
          .text("Percentage of Students that Recycle")
          .attr("class", "title")
+         .attr("font-size","12px")
+         .style("font-weight", "bold")
        }
 
         // Gets or sets the dispatcher we use for selection events
