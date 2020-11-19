@@ -31,5 +31,16 @@
 
   });
 
+  d3.csv('data/stacked1.csv').then(data => {
+
+    // General event type for selections, used by d3-dispatch
+    // https://github.com/d3/d3-dispatch
+    const dispatchString = 'selectionUpdated';
+
+    let dataStacked1 = stacked1()
+    .selectionDispatcher(d3.dispatch(dispatchString))
+    ('#stacked1', data);
+
+  });
 
 })());
