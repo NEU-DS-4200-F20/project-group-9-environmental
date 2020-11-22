@@ -1,16 +1,16 @@
 
-function stacked1() {
+function stacked() {
 
   // Based on Mike Bostock's margin convention
   // https://bl.ocks.org/mbostock/3019563
   let margin = {
-      top: 150,
-      left: 25,
-      right: 125,
+      top: 100,
+      left: 50,
+      right: 50,
       bottom: 20
     },
     width = 500 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom,
+    height = 500 - margin.top ,
     selectableElements = d3.select(null),
     dispatcher;
 
@@ -18,80 +18,107 @@ function stacked1() {
     // specified by the selector using the given data
     function chart(selector, data) {
   // using tutorial from https://www.d3-graph-gallery.com/graph/barplot_stacked_basicWide.html
+
+
+  //https://observablehq.com/@ericd9799/learning-stacked-bar-chart-in-d3-js
+
+  //http://bl.ocks.org/mstanaland/6100713
   // append the svg object to the body of the page
+          // Setup svg using Bostock's margin convention
         var svg = d3.select(selector)
         .append("svg")
-        .attr("width", width + margin.left + margin.right)
+        .attr("width", width + margin.left + margin.right + 200)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        .attr("transform", "translate(" + margin.left+ "," + margin.top + ")");
 
-        // Transpose the data into layers
-        var dataset = d3.layout.stack((["<20%", "25% - 50%", "50%-75%", "all"]).map(function(vals) {
-        return data.map(function(d) {
-          return {x: d.Recycling, y: +d[vals]};
-        });
-        }));
 
+        // // Transpose the data into layers
+        // var dataset = d3.stack()(["Recycle", "No Recycle"].map(function(vals) {
+        // return data.map(function(d) {
+        // return {x: d.Percent, y: +d[vals]};
+        // });
+        // }));
+
+        // make stack of elements
+        dataset = d3.stack().keys(data.columns.slice(1))(data);
+
+        console.log(dataset);
 
         // Set x, y and colors
-        var x = d3.scale.ordinal()
-        .domain(dataset[0].map(function(d) { return d.x; }))
-        .rangeRoundBands([10, width-10], 0.02);
-
-        var y = d3.scale.linear()
-        .domain([0, d3.max(dataset, function(d) {  return d3.max(d, function(d) { return d.y0 + d.y; });  })])
-        .range([height, 0]);
-
-        var colors = ["b33040", "#d25c4d", "#f2b447", "#d9d574"];
+        var x = d3.scaleBand()
+          .domain(data.map(function(d){return d.Percent;}))
+            .range([0, width])
+            .padding(0.1);
 
 
-        // Define and draw axes
-        var yAxis = d3.svg.axis()
-        .scale(y)
-        .orient("left")
-        .ticks(5)
-        .tickSize(-width, 0, 0)
-        .tickFormat( function(d) { return d } );
+        // d3.scaleOrdinal()
+        // .domain(dataset.map(function(d){return d.Percent;}))
+        // .range([0, width]);
+        //.domain(dataset[0].map(function(d) { return d.x; }));
+        //.rangeRoundBands([10, width-10], 0.02);
 
-        var xAxis = d3.svg.axis()
-        .scale(x)
-        .orient("bottom")
-        .tickFormat(d3.time.format("%Y"));
+        var y = d3.scaleLinear()
+        .domain([0,d3.max(dataset, d => d3.max(d, d=> d[1]))])
+        .range([height,0]);
+
+
+        var xAxis = svg.append("g")
+        .attr("id", "xAxis")
+        .attr("transform", "translate(0,"+height+")")
+        .call(d3.axisBottom(x));
+
+        var yAxis = svg.append("g")
+        .attr("id", "yAxis")
+        .call(d3.axisLeft(y));
+
+
+        var colors = ["#008000","#ffa500"];
+        //const color = d3.scaleOrdinal(d3.schemeCategory10);
 
         svg.append("g")
         .attr("class", "y axis")
-        .call(yAxis);
+        .call(y);
 
         svg.append("g")
         .attr("class", "x axis")
         .attr("transform", "translate(0," + height + ")")
-        .call(xAxis);
+        .call(x);
 
 
-        // Create groups for each series, rects for each segment
-        var groups = svg.selectAll("g.cost")
-        .data(dataset)
-        .enter().append("g")
-        .attr("class", "cost")
-        .style("fill", function(d, i) { return colors[i]; });
+        // // Create groups for each series, rects for each segment
+        // var groups = svg.selectAll("g")
+        // .data(dataset)
+        // .enter().append("g")
+        // //.attr("class", "cost")
+        // .attr("fill", d => color(d.key));
 
-        var rect = groups.selectAll("rect")
-        .data(function(d) { return d; })
-        .enter()
-        .append("rect")
-        .attr("x", function(d) { return x(d.x); })
-        .attr("y", function(d) { return y(d.y0 + d.y); })
-        .attr("height", function(d) { return y(d.y0) - y(d.y0 + d.y); })
-        .attr("width", x.rangeBand())
-        .on("mouseover", function() { tooltip.style("display", null); })
-        .on("mouseout", function() { tooltip.style("display", "none"); })
-        .on("mousemove", function(d) {
-          var xPosition = d3.mouse(this)[0] - 15;
-          var yPosition = d3.mouse(this)[1] - 25;
-          tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
-          tooltip.select("text").text(d.y);
-        });
+        var rects = svg.selectAll(selector).data(dataset).enter()
+        .append("g")
+        .attr("fill", function(d, i) { return colors[i]; })
+          //.attr("x axis", function(d) { return x(d.x); })
+         //.attr("y axis", function(d) { return y(d.y0 + d.y); })
+         //.attr("height", function(d) { return y(d.y0) - y(d.y0 + d.y); })
+        //.attr("width", x.rangeBand())
+
+        rects.selectAll("rect")
+           .data(d => d)
+           .join("rect")
+           .attr("x", (d, i) => x(d.data.Percent))
+           .attr("y", d=> y(d[1]))
+           .attr("height", d=> y(d[0]) - y(d[1]))
+           .attr("width", x.bandwidth())
+           .on("mouseover", function() { tooltip.style("display", null); })
+           .on("mouseout", function() { tooltip.style("display", "none"); })
+           .on("mousemove", function(d) {
+             var xPosition = d3.pointer(this) - 15;
+             var yPosition = d3.pointer(this)  - 25;
+           tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
+           tooltip.select("text").text(d.y);
+           });
+
+          console.log(rects)
+
 
 
         // Draw legend
@@ -103,9 +130,9 @@ function stacked1() {
 
         legend.append("rect")
         .attr("x", width - 18)
-        .attr("width", 18)
-        .attr("height", 18)
-        .style("fill", function(d, i) {return colors.slice().reverse()[i];});
+        .attr("width", 14)
+        .attr("height", 14)
+        .style("fill", function(d, i) {return colors.slice()[i];});
 
         legend.append("text")
         .attr("x", width + 5)
@@ -113,13 +140,22 @@ function stacked1() {
         .attr("dy", ".35em")
         .style("text-anchor", "start")
         .text(function(d, i) {
-          switch (i) {
-            case 0: return "Anjou pears";
-            case 1: return "Naval oranges";
-            case 2: return "McIntosh apples";
-            case 3: return "Red Delicious apples";
-          }
+        switch (i) {
+        case 0: return "Recycles";
+        case 1: return "Doesn't recycle";
+        }
         });
+
+
+        // add title
+        svg.append("g")
+           .attr("transform", "translate(" + (width/3) + "," -200+ ")")
+           .append("text")
+           .text("What percent of materials placed in recycling bins do you think is actually recycled?")
+           .attr("class", "title")
+           .attr("font-size","14x")
+           //.style("font-weight", "bold")
+
 
 
         // Prep the tooltip bits, initial display is hidden
@@ -131,7 +167,8 @@ function stacked1() {
         .attr("width", 30)
         .attr("height", 20)
         .attr("fill", "white")
-        .style("opacity", 0.5);
+        .style("opacity", 0.5)
+        .style("position", "absolute");
 
         tooltip.append("text")
         .attr("x", 15)
@@ -139,6 +176,7 @@ function stacked1() {
         .style("text-anchor", "middle")
         .attr("font-size", "12px")
         .attr("font-weight", "bold");
+
       }
         // Gets or sets the dispatcher we use for selection events
         chart.selectionDispatcher = function (_) {

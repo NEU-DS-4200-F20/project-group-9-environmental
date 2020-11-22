@@ -1,3 +1,5 @@
-Recycling,<20%,	25% - 50%,50%-75%,	all
-recycle,100,	93,	71,	9
-no recycle,	11,	17,	9,	0
+Percent, Recycle, No Recycle
+<20%, 100, 11
+25% - 50%, 93, 17
+50%-75%, 71, 9
+all, 9, 0

@@ -37,9 +37,9 @@
     // https://github.com/d3/d3-dispatch
     const dispatchString = 'selectionUpdated';
 
-    let dataStacked1 = stacked1()
+    let dataStacked = stacked()
     .selectionDispatcher(d3.dispatch(dispatchString))
-    ('#stacked1', data);
+    ('#stacked', data);
 
   });
 
