@@ -37,8 +37,8 @@
       .x(d => d.Year)
       .xLabel('Year')
       .y(d => d.PercentRecycled)
-      .yLabel('Recycled Quantity')
-      .yLabelOffset(40)
+      .yLabel('% Waste Recycled')
+      .yLabelOffset(50)
       .selectionDispatcher(d3.dispatch(dispatchString))
       ('#linechart', data);
   });

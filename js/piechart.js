@@ -7,14 +7,14 @@ function piechart() {
     // Based on Mike Bostock's margin convention
     // https://bl.ocks.org/mbostock/3019563
     let margin = {
-        top: 0,
+        top: 100,
         left: 50,
         right: 25,
-        bottom: 0
+        bottom: 25
       },
       width = 500 - margin.left - margin.right,
-      height = 500 - margin.top- margin.bottom,
-      radius = 100;
+      height = 500 - margin.top - margin.bottom,
+      radius = 200;
       selectableElements = d3.select(null)
       //dispatcher
       ;
@@ -69,12 +69,34 @@ function piechart() {
          .attr("font-size","10px");
 
       svg.append("g")
-         .attr("transform", "translate(" + (width / 2 - 125) + "," + 20 + ")")
+         .attr("transform", "translate(" + (width/5) + "," + 300 + ")")
          .append("text")
          .text("Percentage of Students that Recycle")
          .attr("class", "title")
-         .attr("font-size","12px")
-         .style("font-weight", "bold")
+         .attr("font-size","16px")
+         //.style("font-weight", "bold")
+
+      arcs.append("path")
+         .attr("d", arc)
+         .style("fill", function(d,i) {
+           return color(i);
+         })
+         .on("mouseover", function(d, i) {
+             console.log(d);
+             svg.append("text")
+               .attr("dy", ".5em")
+               .style("text-anchor", "middle")
+               .style("font-size", 45)
+               .attr("class","label")
+               .style("fill", function(d,i){return "black";})
+               .text(names[i]);
+
+         })
+         .on("mouseout", function(d) {
+           svg.select(".label").remove();
+         });
+
+
        }
 
         // Gets or sets the dispatcher we use for selection events
