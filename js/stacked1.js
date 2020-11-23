@@ -107,15 +107,15 @@ function stacked() {
            .attr("x", (d, i) => x(d.data.Percent))
            .attr("y", d=> y(d[1]))
            .attr("height", d=> y(d[0]) - y(d[1]))
-           .attr("width", x.bandwidth())
-           .on("mouseover", function() { tooltip.style("display", null); })
-           .on("mouseout", function() { tooltip.style("display", "none"); })
-           .on("mousemove", function(d) {
-             var xPosition = d3.pointer(this) - 15;
-             var yPosition = d3.pointer(this)  - 25;
-           tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
-           tooltip.select("text").text(d.y);
-           });
+           .attr("width", x.bandwidth());
+           // .on("mouseover", function() { tooltip.style("display", null); })
+           // .on("mouseout", function() { tooltip.style("display", "none"); })
+           // .on("mousemove", function(d) {
+           //   var xPosition = d3.pointer(this) - 15;
+           //   var yPosition = d3.pointer(this)  - 25;
+           // tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
+           // tooltip.select("text").text(d.y);
+           // });
 
           console.log(rects)
 
@@ -149,7 +149,7 @@ function stacked() {
 
         // add title
         svg.append("g")
-           .attr("transform", "translate(" + (width/3) + "," -200+ ")")
+           //.attr("transform", "translate(" + (width/3) + "," - 200 + ")")
            .append("text")
            .text("What percent of materials placed in recycling bins do you think is actually recycled?")
            .attr("class", "title")

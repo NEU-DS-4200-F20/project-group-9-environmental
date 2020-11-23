@@ -6,7 +6,7 @@
 
     // General event type for selections, used by d3-dispatch
     // https://github.com/d3/d3-dispatch
-    const dispatchString = 'selectionUpdated';
+    let dispatchString = 'selectionUpdated';
 
     // // Create a table
     // // a dispatcher (d3-dispatch) for selection events;
@@ -23,7 +23,7 @@
 
     // General event type for selections, used by d3-dispatch
     // https://github.com/d3/d3-dispatch
-    const dispatchString = 'selectionUpdated';
+    let dispatchString = 'selectionUpdated';
 
     // // Create a table
     // // a dispatcher (d3-dispatch) for selection events;
@@ -32,13 +32,22 @@
     .selectionDispatcher(d3.dispatch(dispatchString))
     ('#table', data);
 
+
+    let lineChart = linechart()
+      .x(d => d.Year)
+      .xLabel('Year')
+      .y(d => d.Recycled)
+      .yLabel('Recycled Quantity')
+      .yLabelOffset(40)
+      .selectionDispatcher(d3.dispatch(dispatchString))
+      ('#linechart', data);
   });
 
   d3.csv('data/piechart.csv').then(data => {
 
     // General event type for selections, used by d3-dispatch
     // https://github.com/d3/d3-dispatch
-    const dispatchString = 'selectionUpdated';
+    let dispatchString = 'selectionUpdated';
 
     let dataPie = piechart()
     .selectionDispatcher(d3.dispatch(dispatchString))
@@ -50,7 +59,7 @@
 
     // General event type for selections, used by d3-dispatch
     // https://github.com/d3/d3-dispatch
-    const dispatchString = 'selectionUpdated';
+    let dispatchString = 'selectionUpdated';
 
     let dataStacked = stacked()
     .selectionDispatcher(d3.dispatch(dispatchString))
