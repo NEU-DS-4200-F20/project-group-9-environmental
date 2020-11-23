@@ -7,15 +7,15 @@ function linechart() {
   // Based on Mike Bostock's margin convention
   // https://bl.ocks.org/mbostock/3019563
   let margin = {
-      top: 0,
+      top: 20,
       left: 50,
       right: 25,
-      bottom: 0
+      bottom: 50
     },
     width = 500 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom,
-    xValue = d => d[0],
-    yValue = d => d[1],
+    xValue = d => d.Year,
+    yValue = d => d.PercentRecycled,
     xLabelText = '',
     yLabelText = '',
     yLabelOffsetPx = 0,
@@ -46,8 +46,10 @@ function linechart() {
 
     yScale
       .domain([
-        d3.min(data, d => yValue(d)),
-        d3.max(data, d => yValue(d))
+        //d3.min(data, d => yValue(d)),
+        //d3.max(data, d => yValue(d))
+        0,
+        10
       ])
       .rangeRound([height, 0]);
 

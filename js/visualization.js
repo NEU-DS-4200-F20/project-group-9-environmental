@@ -36,7 +36,7 @@
     let lineChart = linechart()
       .x(d => d.Year)
       .xLabel('Year')
-      .y(d => d.Recycled)
+      .y(d => d.PercentRecycled)
       .yLabel('Recycled Quantity')
       .yLabelOffset(40)
       .selectionDispatcher(d3.dispatch(dispatchString))
