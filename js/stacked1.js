@@ -17,14 +17,11 @@ function stacked() {
     // Create the chart by adding an svg to the div with the id
     // specified by the selector using the given data
     function chart(selector, data) {
-  // using tutorial from https://www.d3-graph-gallery.com/graph/barplot_stacked_basicWide.html
-
-
-  //https://observablehq.com/@ericd9799/learning-stacked-bar-chart-in-d3-js
-
-  //http://bl.ocks.org/mstanaland/6100713
+  //using tutorial from https://www.d3-graph-gallery.com/graph/barplot_stacked_basicWide.html
+  //using tutorial from https://observablehq.com/@ericd9799/learning-stacked-bar-chart-in-d3-js
+  //using tutorial from http://bl.ocks.org/mstanaland/6100713
   // append the svg object to the body of the page
-          // Setup svg using Bostock's margin convention
+        // Setup svg using Bostock's margin convention
         var svg = d3.select(selector)
         .append("svg")
         .attr("width", width + margin.left + margin.right + 200)

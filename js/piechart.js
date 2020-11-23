@@ -76,8 +76,10 @@ function piechart() {
          .attr("font-size","16px")
          //.style("font-weight", "bold")
 
-      arcs.append("path")
-         .attr("d", arc)
+      console.log(arc)
+
+      arc.append("path")
+         //.attr("d", arc)
          .style("fill", function(d,i) {
            return color(i);
          })
@@ -89,7 +91,7 @@ function piechart() {
                .style("font-size", 45)
                .attr("class","label")
                .style("fill", function(d,i){return "black";})
-               .text(names[i]);
+               .text(d.Count);
 
          })
          .on("mouseout", function(d) {
