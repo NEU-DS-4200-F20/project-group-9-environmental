@@ -74,29 +74,50 @@ function piechart() {
          .text("Percentage of Students that Recycle")
          .attr("class", "title")
          .attr("font-size","16px")
+
+
          //.style("font-weight", "bold")
+         var tooltip = d3.select(selector)                               // NEW
+                   .append('div')                                                // NEW
+                   .attr('class', 'tooltip');                                    // NEW
 
-      console.log(arc)
+                 tooltip.append('div')                                           // NEW
+                   .attr('class', 'label');                                      // NEW
 
-      arc.append("path")
-         //.attr("d", arc)
-         .style("fill", function(d,i) {
-           return color(i);
-         })
-         .on("mouseover", function(d, i) {
-             console.log(d);
-             svg.append("text")
-               .attr("dy", ".5em")
-               .style("text-anchor", "middle")
-               .style("font-size", 45)
-               .attr("class","label")
-               .style("fill", function(d,i){return "black";})
-               .text(d.Count);
+                 tooltip.append('div')                                           // NEW
+                   .attr('class', 'count');                                      // NEW
 
-         })
-         .on("mouseout", function(d) {
-           svg.select(".label").remove();
-         });
+                 tooltip.append('div')                                           // NEW
+                   .attr('class', 'percent');                                    // NEW
+
+          data.Count = + data.Count;
+
+          console.log(data.Count)
+
+           var path = svg.selectAll('path')
+             .data(pie(data))
+             .enter()
+             .append('path')
+             .attr('d', arc)
+             .attr('fill', function(d, i) {
+               return color(d.data.Name);
+             });
+
+           path.on('mouseover', function(d) {                            // NEW
+             var total = d3.sum(data.map(function(d) {                // NEW
+               return d.Count;                                           // NEW
+             }));                                                        // NEW
+             var percent = Math.round(1000 * d.data.Count / total) / 10; // NEW
+             tooltip.select('.label').html(d.data.Name);                // NEW
+             tooltip.select('.count').html(d.data.Count);                // NEW
+             tooltip.select('.percent').html(percent + '%');             // NEW
+             tooltip.style('display', 'block');                          // NEW
+           });                                                           // NEW
+
+           path.on('mouseout', function() {                              // NEW
+             tooltip.style('display', 'none');                           // NEW
+                   });                                                           // NEW
+
 
 
        }
