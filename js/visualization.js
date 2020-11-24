@@ -41,6 +41,15 @@
       .yLabelOffset(50)
       .selectionDispatcher(d3.dispatch(dispatchString))
       ('#linechart', data);
+
+
+
+      // When the line chart selection is updated via brushing,
+      // tell the other charts to update it's selection (linking)
+      lineChart.selectionDispatcher().on(dispatchString + ".lc-to-tab", publicTable.updateSelection);
+      // When the table selection is updated via brushing,
+      // tell the other charts to update it's selection (linking)
+      publicTable.selectionDispatcher().on(dispatchString + ".tab-to-lc", lineChart.updateSelection);     
   });
 
   d3.csv('data/piechart.csv').then(data => {
