@@ -1,22 +1,6 @@
 // Immediately Invoked Function Expression to limit access to our
 // variables and prevent
 ((() => {
-
-  d3.csv('data/table.csv').then(data => {
-
-    // General event type for selections, used by d3-dispatch
-    // https://github.com/d3/d3-dispatch
-    let dispatchString = 'selectionUpdated';
-
-    // // Create a table
-    // // a dispatcher (d3-dispatch) for selection events;
-    // // a div id selector to put our table in; and the data to use.
-    let dataTable = table()
-    .selectionDispatcher(d3.dispatch(dispatchString))
-    ('#table', data);
-
-  });
-
   // Load the data from a csv file (you can make these using
   // JSON.stringify(YOUR_OBJECT), just remove the surrounding '')
   d3.csv('data/public_dataset.csv').then(data => {
@@ -73,6 +57,21 @@
     let dataStacked = stacked()
     .selectionDispatcher(d3.dispatch(dispatchString))
     ('#stacked', data);
+
+  });
+
+  d3.csv('data/table.csv').then(data => {
+
+    // General event type for selections, used by d3-dispatch
+    // https://github.com/d3/d3-dispatch
+    let dispatchString = 'selectionUpdated';
+
+    // // Create a table
+    // // a dispatcher (d3-dispatch) for selection events;
+    // // a div id selector to put our table in; and the data to use.
+    let dataTable = table()
+    .selectionDispatcher(d3.dispatch(dispatchString))
+    ('#table', data);
 
   });
 

@@ -42,6 +42,10 @@ function piechart() {
           return d.Count;
         });
 
+      var div = d3.select("body").append("div")
+      .attr("class", "tooltip-pie")
+      .style("opacity", 0);
+
       var path = d3.arc()
                .outerRadius(radius - 10)
                .innerRadius(0);
@@ -53,7 +57,28 @@ function piechart() {
       var arc = g.selectAll(".arc")
                  .data(pie(data))
                  .enter().append("g")
-                 .attr("class", "arc");
+                 .attr("class", "arc")
+
+                 .on("mouseover", function (d, i) {
+                   d3.select(this).transition().duration("50")
+                    .attr("opacity", ".55");
+
+                   div.transition()
+                    .duration(50)
+                    .style("opacity", 1);
+
+                  let num = (Math.round((d.value / data) * (100)).toString() + "%");
+                  div.html(data);
+                 })
+
+                 .on("mouseout", function(d, i) {
+                   d3.select(this).transition().duration("50")
+                   .attr("opacity", "1")
+
+                   div.transition()
+                    .duration('50')
+                    .style("opacity", 0);
+                 })
 
       arc.append("path")
          .attr("d", path)
