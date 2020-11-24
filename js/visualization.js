@@ -3,7 +3,6 @@
 ((() => {
   // Load the data from a csv file (you can make these using
   // JSON.stringify(YOUR_OBJECT), just remove the surrounding '')
-
   d3.csv('data/table.csv').then(data => {
 
     // General event type for selections, used by d3-dispatch
