@@ -68,7 +68,7 @@ function piechart() {
                     .style("opacity", 1);
 
 
-                  let num = (Math.round((d.Count / d.data.all) * (100)).toString() + "%");
+                  let num = (Math.round((d.Count / d.data) * (100)).toString() + "%");
                   div.html(data);
                  })
 
