@@ -169,7 +169,7 @@ function stacked() {
                 .attr("x", (width / 2))
                 .attr("y", 0 - (margin.top / 2))
                 .attr("text-anchor", "middle")
-                .style("font-size", "13px")
+                .style("font-size", "18px")
                 .attr("font-weight", "bold")
                 //.style("text-decoration", "underline")
                 .text("What percent of materials put in recycling bins do you think is actually recycled?");

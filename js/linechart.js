@@ -79,6 +79,10 @@ function linechart() {
         .attr('transform', 'translate(' + yLabelOffsetPx + ', -12)')
         .text(yLabelText);
 
+
+
+
+
     // Add the line
     svg.append('path')
         .datum(data)

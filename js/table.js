@@ -42,6 +42,7 @@ function table() {
         .enter()
         .append("tr")
 
+
       selectableElements = rows;
 
       tbody.selectAll('tr')
