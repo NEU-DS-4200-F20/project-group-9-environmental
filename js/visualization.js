@@ -73,7 +73,7 @@
     let dataStacked = stacked()
       .xLabel('Percent recycled')
       .yLabel('Count of survey respondents')
-      .yLabelOffset(50)
+      .yLabelOffset(80)
       .selectionDispatcher(d3.dispatch(dispatchString))
       ('#stacked', data);
 
