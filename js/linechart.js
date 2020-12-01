@@ -68,7 +68,7 @@ function linechart() {
     // X axis label
     xAxis.append('text')
         .attr('class', 'axisLabel')
-        .attr('transform', 'translate(' + (width - 50) + ',-10)')
+        .attr('transform', 'translate(' + (width/2) + ',50)')
         .text(xLabelText);
 
     // Y axis and label

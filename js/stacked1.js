@@ -9,13 +9,13 @@ function stacked() {
       right: 30,
       bottom: 35
     },
-    width = 500 - margin.left - margin.right,
+    width = 700,
     height = 500 - margin.top  - margin.bottom,
     xLabelText = '',
     yLabelText = '',
     yLabelOffsetPx = 0,
-    selectableElements = d3.select(null),
-    dispatcher;
+    selectableElements = d3.select(null)
+    // dispatcher;
 
     // Create the chart by adding an svg to the div with the id
     // specified by the selector using the given data
@@ -26,9 +26,9 @@ function stacked() {
   // append the svg object to the body of the page
         // Setup svg using Bostock's margin convention
         var svg = d3.select(selector)
+        .classed("svg-container", true)
         .append("svg")
-        .attr("width", width + margin.left + margin.right + 200)
-        .attr("height", height + margin.top + margin.bottom)
+        .attr('viewBox', [0, 0, width + margin.left + margin.right + 100, height + margin.top + margin.bottom].join(' '))
         .append("g")
         .attr("transform", "translate(" + margin.left+ "," + margin.top + ")");
 
@@ -71,7 +71,7 @@ function stacked() {
         // X axis label
         xAxis.append('text')
         .attr('class', 'axisLabel')
-        .attr('transform', 'translate(' + (width - 50) + ',-10)')
+        .attr('transform', 'translate(' + (width/2) + ',25)')
         .text(xLabelText);
 
         var yAxis = svg.append("g")
@@ -79,7 +79,7 @@ function stacked() {
         .call(d3.axisLeft(y))
         .append('text')
         .attr('class', 'axisLabel')
-        .attr('transform', 'translate(' + yLabelOffsetPx + ', -12)')
+        .attr('transform', 'translate(' + 90 + ', -12)')
         .text(yLabelText);;
 
 

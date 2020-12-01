@@ -68,7 +68,7 @@ function piechart() {
                     .style("opacity", 1);
 
 
-                  let num = (Math.round((d.Count / d.data) * (100)).toString() + "%");
+                  // let num = (Math.round((d.Count / d.data.all) * (100)).toString() + "%");
                   div.html(data);
                  })
 
@@ -95,7 +95,7 @@ function piechart() {
          .attr("font-size","10px");
 
       svg.append("g")
-         .attr("transform", "translate(" + (width/5) + "," + 300 + ")")
+         .attr("transform", "translate(" + (width/5 - 20) + "," + 325 + ")")
          .append("text")
          .text("Percentage of Students that Recycle")
          .attr("class", "title")
