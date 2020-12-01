@@ -50,7 +50,7 @@ h1, h2, h3 {
 
 /* The table will take the right half of the screen */
 .stacked-holder{
-  flex: 0 0 40%;
+  flex: 1;
 }
 
 

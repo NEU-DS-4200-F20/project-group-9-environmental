@@ -34,16 +34,15 @@ function piechart() {
       var g = svg.append("g")
                         .attr("transform", "translate(" + ((width / 2) - 25) + "," + height / 4 + ")");
 
-      console.log(svg)
       // Using tutorial from https://www.tutorialsteacher.com/d3js/create-pie-chart-using-d3js for pie chart
-      var color = d3.scaleOrdinal(['#4daf4a','#FF0000']);
+      var color = d3.scaleOrdinal(['#88B791','#FF8484']);
 
       var pie = d3.pie().value(function(d) {
           return d.Count;
         });
 
-      var div = d3.select("body").append("div")
-      .attr("class", "tooltip-pie")
+      var div = d3.select(selector).append("div")
+      .attr("class", "tooltip-piechart")
       .style("opacity", 0);
 
       var path = d3.arc()
@@ -54,10 +53,11 @@ function piechart() {
                 .outerRadius(radius)
                 .innerRadius(radius - 80);
 
+
       var arc = g.selectAll(".arc")
                  .data(pie(data))
                  .enter().append("g")
-                 .attr("class", "arc")
+                 .attr("d", "arc")
 
                  .on("mouseover", function (d, i) {
                    d3.select(this).transition().duration("50")
@@ -67,7 +67,8 @@ function piechart() {
                     .duration(50)
                     .style("opacity", 1);
 
-                  let num = (Math.round((d.value / data) * (100)).toString() + "%");
+
+                  let num = (Math.round((d.Count / d.data.all) * (100)).toString() + "%");
                   div.html(data);
                  })
 
@@ -80,11 +81,11 @@ function piechart() {
                     .style("opacity", 0);
                  })
 
+
+
       arc.append("path")
          .attr("d", path)
          .attr("fill", function(d) { return color(d.data.Name); });
-
-      console.log(arc)
 
       arc.append("text")
          .attr("transform", function(d) {
@@ -99,50 +100,6 @@ function piechart() {
          .text("Percentage of Students that Recycle")
          .attr("class", "title")
          .attr("font-size","16px")
-
-
-         //.style("font-weight", "bold")
-         var tooltip = d3.select(selector)                               // NEW
-                   .append('div')                                                // NEW
-                   .attr('class', 'tooltip');                                    // NEW
-
-                 tooltip.append('div')                                           // NEW
-                   .attr('class', 'label');                                      // NEW
-
-                 tooltip.append('div')                                           // NEW
-                   .attr('class', 'count');                                      // NEW
-
-                 tooltip.append('div')                                           // NEW
-                   .attr('class', 'percent');                                    // NEW
-
-          data.Count = + data.Count;
-
-          console.log(data.Count)
-
-           var path = svg.selectAll('path')
-             .data(pie(data))
-             .enter()
-             .append('path')
-             .attr('d', arc)
-             .attr('fill', function(d, i) {
-               return color(d.data.Name);
-             });
-
-           path.on('mouseover', function(d) {                            // NEW
-             var total = d3.sum(data.map(function(d) {                // NEW
-               return d.Count;                                           // NEW
-             }));                                                        // NEW
-             var percent = Math.round(1000 * d.data.Count / total) / 10; // NEW
-             tooltip.select('.label').html(d.data.Name);                // NEW
-             tooltip.select('.count').html(d.data.Count);                // NEW
-             tooltip.select('.percent').html(percent + '%');             // NEW
-             tooltip.style('display', 'block');                          // NEW
-           });                                                           // NEW
-
-           path.on('mouseout', function() {                              // NEW
-             tooltip.style('display', 'none');                           // NEW
-                   });                                                           // NEW
-
 
 
        }
@@ -168,3 +125,34 @@ function piechart() {
 
   return chart
 }
+
+
+//
+//
+// var path = selector.selectAll('path')
+//      .data(pie(totals))
+//      .enter()
+//      .append('path')
+//      .attr('d', arc)
+//      .attr('fill', function (d, i) {
+//           return color(d.data.title);
+//      })
+//      .attr('transform', 'translate(0, 0)')
+//      .on('mouseover', function (d, i) {
+//           d3.select(this).transition()
+//                .duration('50')
+//                .attr('opacity', '.85');
+//           //Makes the new div appear on hover:
+//           div.transition()
+//                .duration(50)
+//                .style("opacity", 1);
+//      })
+//      .on('mouseout', function (d, i) {
+//           d3.select(this).transition()
+//                .duration('50')
+//                .attr('opacity', '1');
+//           //Makes the new div disappear:
+//           div.transition()
+//                .duration('50')
+//                .style("opacity", 0);
+//      });

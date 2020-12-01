@@ -6,11 +6,14 @@ function stacked() {
   let margin = {
       top: 100,
       left: 50,
-      right: 50,
-      bottom: 20
+      right: 30,
+      bottom: 35
     },
     width = 500 - margin.left - margin.right,
-    height = 500 - margin.top ,
+    height = 500 - margin.top  - margin.bottom,
+    xLabelText = '',
+    yLabelText = '',
+    yLabelOffsetPx = 0,
     selectableElements = d3.select(null),
     dispatcher;
 
@@ -46,7 +49,7 @@ function stacked() {
         var x = d3.scaleBand()
           .domain(data.map(function(d){return d.Percent;}))
             .range([0, width])
-            .padding(0.1);
+            .padding(.1);
 
 
         // d3.scaleOrdinal()
@@ -65,12 +68,22 @@ function stacked() {
         .attr("transform", "translate(0,"+height+")")
         .call(d3.axisBottom(x));
 
+        // X axis label
+        xAxis.append('text')
+        .attr('class', 'axisLabel')
+        .attr('transform', 'translate(' + (width - 50) + ',-10)')
+        .text(xLabelText);
+
         var yAxis = svg.append("g")
         .attr("id", "yAxis")
-        .call(d3.axisLeft(y));
+        .call(d3.axisLeft(y))
+        .append('text')
+        .attr('class', 'axisLabel')
+        .attr('transform', 'translate(' + yLabelOffsetPx + ', -12)')
+        .text(yLabelText);;
 
 
-        var colors = ["#008000","#ffa500"];
+        var colors = ['#88B791','#FF8484'];
         //const color = d3.scaleOrdinal(d3.schemeCategory10);
 
         svg.append("g")
@@ -114,10 +127,6 @@ function stacked() {
            // tooltip.select("text").text(d.y);
            // });
 
-          console.log(rects)
-
-
-
         // Draw legend
         var legend = svg.selectAll(".legend")
         .data(colors)
@@ -136,6 +145,7 @@ function stacked() {
         .attr("y", 9)
         .attr("dy", ".35em")
         .style("text-anchor", "start")
+        .style("font-size", "14px")
         .text(function(d, i) {
         switch (i) {
         case 0: return "Recycles";
@@ -143,15 +153,26 @@ function stacked() {
         }
         });
 
+        //
+        // // add title
+        // svg.append("g")
+        //    //.attr("transform", "translate(" + (width/3) + "," - 200 + ")")
+        //    .append("text")
+        //    .text("What percent of materials placed in recycling bins do you think is actually recycled?")
+        //    .attr("class", "title")
+        //    .attr("font-size","14x")
+        //    //.style("font-weight", "bold")
 
-        // add title
-        svg.append("g")
-           //.attr("transform", "translate(" + (width/3) + "," - 200 + ")")
-           .append("text")
-           .text("What percent of materials placed in recycling bins do you think is actually recycled?")
-           .attr("class", "title")
-           .attr("font-size","14x")
-           //.style("font-weight", "bold")
+
+
+        svg.append("text")
+                .attr("x", (width / 2))
+                .attr("y", 0 - (margin.top / 2))
+                .attr("text-anchor", "middle")
+                .style("font-size", "13px")
+                .attr("font-weight", "bold")
+                //.style("text-decoration", "underline")
+                .text("What percent of materials put in recycling bins do you think is actually recycled?");
 
 
 
@@ -175,6 +196,29 @@ function stacked() {
         .attr("font-weight", "bold");
 
       }
+
+
+        chart.xLabel = function (_) {
+          if (!arguments.length) return xLabelText;
+          xLabelText = _;
+          return chart;
+        };
+
+        chart.yLabel = function (_) {
+          if (!arguments.length) return yLabelText;
+          yLabelText = _;
+          return chart;
+        };
+
+
+        chart.yLabelOffset = function (_) {
+        if (!arguments.length) return yLabelOffsetPx;
+        yLabelOffsetPx = _;
+        return chart;
+        };
+
+
+
         // Gets or sets the dispatcher we use for selection events
         chart.selectionDispatcher = function (_) {
           if (!arguments.length) return dispatcher;
