@@ -67,9 +67,8 @@ function piechart() {
                     .duration(50)
                     .style("opacity", 1);
 
-
-                  // let num = (Math.round((d.Count / d.data.all) * (100)).toString() + "%");
-                  div.html(data);
+                  let num = (Math.round((i.data.Count / 313) * (100)).toString() + "%");
+                  div.html(i.data.Name + ": " + num);
                  })
 
                  .on("mouseout", function(d, i) {
