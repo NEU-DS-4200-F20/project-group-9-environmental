@@ -1,5 +1,5 @@
 
-function stacked() {
+function stacked_wtp() {
 
   // Based on Mike Bostock's margin convention
   // https://bl.ocks.org/mbostock/3019563
@@ -172,7 +172,7 @@ function stacked() {
                 .style("font-size", "18px")
                 .attr("font-weight", "bold")
                 //.style("text-decoration", "underline")
-                .text("What percent of materials put in recycling bins do you think is actually recycled?");
+                .text("How much extra would you be willing to pay to eliminate the impact of your single-use cup?");
 
 
 

@@ -65,4 +65,37 @@
   });
 
 
+  d3.csv('data/stacked2.csv').then(data => {
+
+    // General event type for selections, used by d3-dispatch
+    // https://github.com/d3/d3-dispatch
+    let dispatchString = 'selectionUpdated';
+
+    let dataStacked2 = stacked_sig()
+      .xLabel('Level of concern')
+      .yLabel('Count of survey respondents')
+      .yLabelOffset(80)
+      .selectionDispatcher(d3.dispatch(dispatchString))
+      ('#stacked2', data);
+
+  });
+
+  d3.csv('data/stacked3.csv').then(data => {
+
+    // General event type for selections, used by d3-dispatch
+    // https://github.com/d3/d3-dispatch
+    let dispatchString = 'selectionUpdated';
+
+    let dataStacked2 = stacked_wtp()
+      .xLabel('Extra amount willing to pay')
+      .yLabel('Count of survey respondents')
+      .yLabelOffset(80)
+      .selectionDispatcher(d3.dispatch(dispatchString))
+      ('#stacked3', data);
+
+  });
+
+
+
+
 })());

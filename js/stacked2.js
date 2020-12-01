@@ -1,5 +1,5 @@
 
-function stacked() {
+function stacked_sig() {
 
   // Based on Mike Bostock's margin convention
   // https://bl.ocks.org/mbostock/3019563
@@ -43,11 +43,10 @@ function stacked() {
         // make stack of elements
         dataset = d3.stack().keys(data.columns.slice(1))(data);
 
-        console.log(dataset);
 
         // Set x, y and colors
         var x = d3.scaleBand()
-          .domain(data.map(function(d){return d.Percent;}))
+          .domain(data.map(function(d){return d.Response;}))
             .range([0, width])
             .padding(.1);
 
@@ -114,7 +113,7 @@ function stacked() {
         rects.selectAll("rect")
            .data(d => d)
            .join("rect")
-           .attr("x", (d, i) => x(d.data.Percent))
+           .attr("x", (d, i) => x(d.data.Response))
            .attr("y", d=> y(d[1]))
            .attr("height", d=> y(d[0]) - y(d[1]))
            .attr("width", x.bandwidth());
@@ -172,7 +171,7 @@ function stacked() {
                 .style("font-size", "18px")
                 .attr("font-weight", "bold")
                 //.style("text-decoration", "underline")
-                .text("What percent of materials put in recycling bins do you think is actually recycled?");
+                .text("To what extent do you believe the present speed of climate change is an issue?");
 
 
 

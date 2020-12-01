@@ -10,11 +10,11 @@ function piechart() {
         top: 100,
         left: 50,
         right: 25,
-        bottom: 25
+        bottom: 0
       },
       width = 500 - margin.left - margin.right,
       height = 500 - margin.top - margin.bottom,
-      radius = 200;
+      radius = 150;
       selectableElements = d3.select(null)
       //dispatcher
       ;
@@ -94,12 +94,24 @@ function piechart() {
          .text(function(d) { return d.data.Name; })
          .attr("font-size","10px");
 
-      svg.append("g")
-         .attr("transform", "translate(" + (width/5 - 20) + "," + 325 + ")")
-         .append("text")
-         .text("Percentage of Students that Recycle")
-         .attr("class", "title")
-         .attr("font-size","16px")
+      // svg.append("g")
+      //    .attr("transform", "translate(" + (width/3 - 20) + "," - 300 + ")")
+      //    .append("text")
+      //    .text("Percentage of Students that Recycle")
+      //    .attr("class", "title")
+      //    .attr("font-size","16px")
+      //
+
+
+      svg.append("text")
+              .attr("x", (width / 2))
+              .attr("y", -10 - (margin.top / 2))
+              .attr("text-anchor", "middle")
+              .style("font-size", "12px")
+              .attr("font-weight", "bold")
+              //.style("text-decoration", "underline")
+              .text("Do you participate in routine recycling of your trash?");
+
 
 
        }
