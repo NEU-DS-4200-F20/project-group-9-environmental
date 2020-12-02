@@ -45,6 +45,7 @@ function table() {
 
       selectableElements = rows;
 
+      // Functionality for selecting the appropriate rows when the mouse is down.
       tbody.selectAll('tr')
       .on('mouseover', function() {
           // Reference: https://stackoverflow.com/questions/15709304/d3-color-change-on-mouseover-using-classedactive-true
@@ -64,17 +65,19 @@ function table() {
           d3.select(this).classed('selected', true);
         })
 
+
       function dispatch(selection) {
         let dispatchString = Object.getOwnPropertyNames(dispatcher._)[0];
         dispatcher.call(dispatchString, this, d3.selectAll(selection).data());
       }
 
       // Reference: https://stackoverflow.com/questions/322378/javascript-check-if-mouse-button-down
-      var mouseDown = 0;
-      document.body.onmousedown = () => {
+      // Used to determine if the mouse is down and clicked or not
+      let mouseDown = 0;
+      document.onmousedown = () => {
         mouseDown = 1;
       }
-      document.body.onmouseup = () => {
+      document.onmouseup = () => {
         mouseDown = 0;
       }
 
