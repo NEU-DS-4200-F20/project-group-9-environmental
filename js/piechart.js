@@ -25,7 +25,7 @@ function piechart() {
       let svg = d3.select(selector)
           .append('svg')
           .attr('preserveAspectRatio', 'xMidYMid meet')
-          .attr('viewBox', [0, 0, width + margin.left + margin.right, height + margin.top + margin.bottom].join(' '))
+          .attr('viewBox', [0, 0, width + margin.left + margin.right, height].join(' '))
           .classed('svg-content', true);
 
       svg = svg.append('g')
@@ -61,7 +61,7 @@ function piechart() {
 
                  .on("mouseover", function (d, i) {
                    d3.select(this).transition().duration("50")
-                    .attr("opacity", ".55");
+                    .attr("opacity", ".55")
 
                    div.transition()
                     .duration(50)
@@ -94,15 +94,6 @@ function piechart() {
          .text(function(d) { return d.data.Name; })
          .attr("font-size","10px");
 
-      // svg.append("g")
-      //    .attr("transform", "translate(" + (width/3 - 20) + "," - 300 + ")")
-      //    .append("text")
-      //    .text("Percentage of Students that Recycle")
-      //    .attr("class", "title")
-      //    .attr("font-size","16px")
-      //
-
-
       svg.append("text")
               .attr("x", (width / 2))
               .attr("y", -10 - (margin.top / 2))
@@ -111,9 +102,6 @@ function piechart() {
               .attr("font-weight", "bold")
               //.style("text-decoration", "underline")
               .text("Do you participate in routine recycling of your trash?");
-
-
-
        }
 
         // Gets or sets the dispatcher we use for selection events

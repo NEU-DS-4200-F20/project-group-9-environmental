@@ -32,14 +32,6 @@ function stacked_wtp() {
         .append("g")
         .attr("transform", "translate(" + margin.left+ "," + margin.top + ")");
 
-
-        // // Transpose the data into layers
-        // var dataset = d3.stack()(["Recycle", "No Recycle"].map(function(vals) {
-        // return data.map(function(d) {
-        // return {x: d.Percent, y: +d[vals]};
-        // });
-        // }));
-
         // make stack of elements
         dataset = d3.stack().keys(data.columns.slice(1))(data);
 
@@ -50,13 +42,6 @@ function stacked_wtp() {
           .domain(data.map(function(d){return d.Percent;}))
             .range([0, width])
             .padding(.1);
-
-
-        // d3.scaleOrdinal()
-        // .domain(dataset.map(function(d){return d.Percent;}))
-        // .range([0, width]);
-        //.domain(dataset[0].map(function(d) { return d.x; }));
-        //.rangeRoundBands([10, width-10], 0.02);
 
         var y = d3.scaleLinear()
         .domain([0,d3.max(dataset, d => d3.max(d, d=> d[1]))])
@@ -86,6 +71,10 @@ function stacked_wtp() {
         var colors = ['#88B791','#FF8484'];
         //const color = d3.scaleOrdinal(d3.schemeCategory10);
 
+        var div = d3.select(selector).append("div")
+        .attr("class", "tooltip-stacked")
+        .style("opacity", 0);
+        
         svg.append("g")
         .attr("class", "y axis")
         .call(y);
@@ -95,21 +84,10 @@ function stacked_wtp() {
         .attr("transform", "translate(0," + height + ")")
         .call(x);
 
-
-        // // Create groups for each series, rects for each segment
-        // var groups = svg.selectAll("g")
-        // .data(dataset)
-        // .enter().append("g")
-        // //.attr("class", "cost")
-        // .attr("fill", d => color(d.key));
-
         var rects = svg.selectAll(selector).data(dataset).enter()
         .append("g")
         .attr("fill", function(d, i) { return colors[i]; })
-          //.attr("x axis", function(d) { return x(d.x); })
-         //.attr("y axis", function(d) { return y(d.y0 + d.y); })
-         //.attr("height", function(d) { return y(d.y0) - y(d.y0 + d.y); })
-        //.attr("width", x.rangeBand())
+          
 
         rects.selectAll("rect")
            .data(d => d)
@@ -117,15 +95,29 @@ function stacked_wtp() {
            .attr("x", (d, i) => x(d.data.Percent))
            .attr("y", d=> y(d[1]))
            .attr("height", d=> y(d[0]) - y(d[1]))
-           .attr("width", x.bandwidth());
-           // .on("mouseover", function() { tooltip.style("display", null); })
-           // .on("mouseout", function() { tooltip.style("display", "none"); })
-           // .on("mousemove", function(d) {
-           //   var xPosition = d3.pointer(this) - 15;
-           //   var yPosition = d3.pointer(this)  - 25;
-           // tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
-           // tooltip.select("text").text(d.y);
-           // });
+           .attr("width", x.bandwidth())
+
+           .on("mouseover", function (d, i) {
+            d3.select(this).transition().duration("50")
+             .attr("opacity", ".55")
+
+             div.transition()
+             .duration(50)
+             .style("opacity", 1);
+            
+             div.html("Recycle: " + i.data.Yes + "; Do Not Recycle: " + i.data.No);
+           })
+
+           .on("mouseout", function(d, i) {
+            d3.select(this).transition().duration("50")
+            .attr("opacity", "1")
+
+            div.transition()
+             .duration('50')
+             .style("opacity", 0);
+          })
+
+           
 
         // Draw legend
         var legend = svg.selectAll(".legend")
