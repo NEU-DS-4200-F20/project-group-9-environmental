@@ -25,7 +25,7 @@ function stacked_wtp() {
   //using tutorial from http://bl.ocks.org/mstanaland/6100713
   // append the svg object to the body of the page
         // Setup svg using Bostock's margin convention
-        var svg = d3.select(selector)
+        let svg = d3.select(selector)
         .classed("svg-container", true)
         .append("svg")
         .attr('viewBox', [0, 0, width + margin.left + margin.right + 100, height + margin.top + margin.bottom].join(' '))
@@ -38,17 +38,17 @@ function stacked_wtp() {
         console.log(dataset);
 
         // Set x, y and colors
-        var x = d3.scaleBand()
+        let x = d3.scaleBand()
           .domain(data.map(function(d){return d.Percent;}))
             .range([0, width])
             .padding(.1);
 
-        var y = d3.scaleLinear()
+        let y = d3.scaleLinear()
         .domain([0,d3.max(dataset, d => d3.max(d, d=> d[1]))])
         .range([height,0]);
 
 
-        var xAxis = svg.append("g")
+        let xAxis = svg.append("g")
         .attr("id", "xAxis")
         .attr("transform", "translate(0,"+height+")")
         .call(d3.axisBottom(x));
@@ -59,7 +59,7 @@ function stacked_wtp() {
         .attr('transform', 'translate(' + (width/2) + ',25)')
         .text(xLabelText);
 
-        var yAxis = svg.append("g")
+        let yAxis = svg.append("g")
         .attr("id", "yAxis")
         .call(d3.axisLeft(y))
         .append('text')
@@ -68,10 +68,9 @@ function stacked_wtp() {
         .text(yLabelText);;
 
 
-        var colors = ['#88B791','#FF8484'];
-        //const color = d3.scaleOrdinal(d3.schemeCategory10);
+        let colors = ['#88B791','#FF8484'];
 
-        var div = d3.select(selector).append("div")
+        let div = d3.select(selector).append("div")
         .attr("class", "tooltip-stacked")
         .style("opacity", 0);
         
@@ -84,7 +83,7 @@ function stacked_wtp() {
         .attr("transform", "translate(0," + height + ")")
         .call(x);
 
-        var rects = svg.selectAll(selector).data(dataset).enter()
+        let rects = svg.selectAll(selector).data(dataset).enter()
         .append("g")
         .attr("fill", function(d, i) { return colors[i]; })
           
@@ -120,7 +119,7 @@ function stacked_wtp() {
            
 
         // Draw legend
-        var legend = svg.selectAll(".legend")
+        let legend = svg.selectAll(".legend")
         .data(colors)
         .enter().append("g")
         .attr("class", "legend")
@@ -145,18 +144,6 @@ function stacked_wtp() {
         }
         });
 
-        //
-        // // add title
-        // svg.append("g")
-        //    //.attr("transform", "translate(" + (width/3) + "," - 200 + ")")
-        //    .append("text")
-        //    .text("What percent of materials placed in recycling bins do you think is actually recycled?")
-        //    .attr("class", "title")
-        //    .attr("font-size","14x")
-        //    //.style("font-weight", "bold")
-
-
-
         svg.append("text")
                 .attr("x", (width / 2))
                 .attr("y", 0 - (margin.top / 2))
@@ -165,27 +152,6 @@ function stacked_wtp() {
                 .attr("font-weight", "bold")
                 //.style("text-decoration", "underline")
                 .text("How much extra would you be willing to pay to eliminate the impact of your single-use cup?");
-
-
-
-        // Prep the tooltip bits, initial display is hidden
-        var tooltip = svg.append("g")
-        .attr("class", "tooltip")
-        .style("display", "none");
-
-        tooltip.append("rect")
-        .attr("width", 30)
-        .attr("height", 20)
-        .attr("fill", "white")
-        .style("opacity", 0.5)
-        .style("position", "absolute");
-
-        tooltip.append("text")
-        .attr("x", 15)
-        .attr("dy", "1.2em")
-        .style("text-anchor", "middle")
-        .attr("font-size", "12px")
-        .attr("font-weight", "bold");
 
       }
 

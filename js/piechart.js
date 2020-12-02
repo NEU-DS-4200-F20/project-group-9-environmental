@@ -16,7 +16,6 @@ function piechart() {
       height = 500 - margin.top - margin.bottom,
       radius = 150;
       selectableElements = d3.select(null)
-      //dispatcher
       ;
 
     // Create the chart by adding an svg to the div with the id
@@ -31,34 +30,35 @@ function piechart() {
       svg = svg.append('g')
           .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-      var g = svg.append("g")
+      let g = svg.append("g")
                         .attr("transform", "translate(" + ((width / 2) - 25) + "," + height / 4 + ")");
 
       // Using tutorial from https://www.tutorialsteacher.com/d3js/create-pie-chart-using-d3js for pie chart
-      var color = d3.scaleOrdinal(['#88B791','#FF8484']);
+      let color = d3.scaleOrdinal(['#88B791','#FF8484']);
 
-      var pie = d3.pie().value(function(d) {
+      let pie = d3.pie().value(function(d) {
           return d.Count;
         });
 
-      var div = d3.select(selector).append("div")
+      let div = d3.select(selector).append("div")
       .attr("class", "tooltip-piechart")
       .style("opacity", 0);
 
-      var path = d3.arc()
+      let path = d3.arc()
                .outerRadius(radius - 10)
                .innerRadius(0);
 
-      var label = d3.arc()
+      let label = d3.arc()
                 .outerRadius(radius)
                 .innerRadius(radius - 80);
 
 
-      var arc = g.selectAll(".arc")
+      let arc = g.selectAll(".arc")
                  .data(pie(data))
                  .enter().append("g")
                  .attr("d", "arc")
 
+                 //details on demand functionality
                  .on("mouseover", function (d, i) {
                    d3.select(this).transition().duration("50")
                     .attr("opacity", ".55")
@@ -125,34 +125,3 @@ function piechart() {
 
   return chart
 }
-
-
-//
-//
-// var path = selector.selectAll('path')
-//      .data(pie(totals))
-//      .enter()
-//      .append('path')
-//      .attr('d', arc)
-//      .attr('fill', function (d, i) {
-//           return color(d.data.title);
-//      })
-//      .attr('transform', 'translate(0, 0)')
-//      .on('mouseover', function (d, i) {
-//           d3.select(this).transition()
-//                .duration('50')
-//                .attr('opacity', '.85');
-//           //Makes the new div appear on hover:
-//           div.transition()
-//                .duration(50)
-//                .style("opacity", 1);
-//      })
-//      .on('mouseout', function (d, i) {
-//           d3.select(this).transition()
-//                .duration('50')
-//                .attr('opacity', '1');
-//           //Makes the new div disappear:
-//           div.transition()
-//                .duration('50')
-//                .style("opacity", 0);
-//      });
