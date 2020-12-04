@@ -20,10 +20,10 @@ function stacked_wtp() {
     // Create the chart by adding an svg to the div with the id
     // specified by the selector using the given data
     function chart(selector, data) {
-  //using tutorial from https://www.d3-graph-gallery.com/graph/barplot_stacked_basicWide.html
-  //using tutorial from https://observablehq.com/@ericd9799/learning-stacked-bar-chart-in-d3-js
-  //using tutorial from http://bl.ocks.org/mstanaland/6100713
-  // append the svg object to the body of the page
+    //referencing tutorial from https://www.d3-graph-gallery.com/graph/barplot_stacked_basicWide.html
+    //referencing tutorial from https://observablehq.com/@ericd9799/learning-stacked-bar-chart-in-d3-js
+    //referencing tutorial from http://bl.ocks.org/mstanaland/6100713
+    // append the svg object to the body of the page
         // Setup svg using Bostock's margin convention
         let svg = d3.select(selector)
         .classed("svg-container", true)
@@ -67,13 +67,13 @@ function stacked_wtp() {
         .attr('transform', 'translate(' + 90 + ', -12)')
         .text(yLabelText);;
 
-
+        // have colors match pie chart and other bar charts
         let colors = ['#88B791','#FF8484'];
 
         let div = d3.select(selector).append("div")
         .attr("class", "tooltip-stacked")
         .style("opacity", 0);
-        
+
         svg.append("g")
         .attr("class", "y axis")
         .call(y);
@@ -86,7 +86,7 @@ function stacked_wtp() {
         let rects = svg.selectAll(selector).data(dataset).enter()
         .append("g")
         .attr("fill", function(d, i) { return colors[i]; })
-          
+
 
         rects.selectAll("rect")
            .data(d => d)
@@ -103,7 +103,7 @@ function stacked_wtp() {
              div.transition()
              .duration(50)
              .style("opacity", 1);
-            
+
              div.html("Recycle: " + i.data.Yes + "; Do Not Recycle: " + i.data.No);
            })
 
@@ -116,7 +116,6 @@ function stacked_wtp() {
              .style("opacity", 0);
           })
 
-           
 
         // Draw legend
         let legend = svg.selectAll(".legend")
@@ -125,12 +124,14 @@ function stacked_wtp() {
         .attr("class", "legend")
         .attr("transform", function(d, i) { return "translate(30," + i * 19 + ")"; });
 
+        // create legend box
         legend.append("rect")
         .attr("x", width - 18)
         .attr("width", 14)
         .attr("height", 14)
         .style("fill", function(d, i) {return colors.slice()[i];});
 
+        // add legend text
         legend.append("text")
         .attr("x", width + 5)
         .attr("y", 9)
@@ -144,6 +145,7 @@ function stacked_wtp() {
         }
         });
 
+        // add title
         svg.append("text")
                 .attr("x", (width / 2))
                 .attr("y", 0 - (margin.top / 2))

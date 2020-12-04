@@ -37,8 +37,6 @@ function linechart() {
     svg = svg.append('g')
         .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-    console.log(data);
-
     //Define scales
     xScale
       .domain(d3.group(data, xValue).keys())
@@ -46,8 +44,6 @@ function linechart() {
 
     yScale
       .domain([
-        //d3.min(data, d => yValue(d)),
-        //d3.max(data, d => yValue(d))
         0,
         10
       ])
@@ -80,26 +76,19 @@ function linechart() {
         .text(yLabelText);
 
 
-
-
-
-    // Add the line
+    // Add line
     svg.append('path')
         .datum(data)
         .attr('class', 'linePath')
         .attr('d', d3.line()
-          // Just add that to have a curve instead of segments
           .x(X)
           .y(Y)
         );
 
-
-    // Add the points
+    // Add points
     let points = svg.append('g')
       .selectAll('.linePoint')
         .data(data);
-
-    console.log(points);
 
     points.exit().remove();
 
@@ -128,7 +117,8 @@ function linechart() {
 
       ourBrush = brush;
 
-      g.call(brush); // Adds the brush to this element
+      // Adds the brush to this element
+      g.call(brush);
 
       // Highlight the selected circles.
       function highlight(event, d) {
@@ -141,7 +131,7 @@ function linechart() {
           x0 <= X(d) && X(d) <= x1 && y0 <= Y(d) && Y(d) <= y1
         );
 
-        // Get the name of our dispatcher's event
+        // Get the name of  dispatcher's event
         let dispatchString = Object.getOwnPropertyNames(dispatcher._)[0];
 
         // Let other charts know
@@ -149,7 +139,7 @@ function linechart() {
       }
 
       function brushEnd(event, d) {
-        // We don't want infinite recursion
+        // Prevent infinite recursion
         if(event.sourceEvent !== undefined && event.sourceEvent.type!='end'){
           d3.select(this).call(brush.move, null);
         }

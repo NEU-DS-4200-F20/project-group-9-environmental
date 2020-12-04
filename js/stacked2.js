@@ -20,10 +20,10 @@ function stacked_sig() {
     // Create the chart by adding an svg to the div with the id
     // specified by the selector using the given data
     function chart(selector, data) {
-  //using tutorial from https://www.d3-graph-gallery.com/graph/barplot_stacked_basicWide.html
-  //using tutorial from https://observablehq.com/@ericd9799/learning-stacked-bar-chart-in-d3-js
-  //using tutorial from http://bl.ocks.org/mstanaland/6100713
-  // append the svg object to the body of the page
+    //referencing tutorial from https://www.d3-graph-gallery.com/graph/barplot_stacked_basicWide.html
+    //referencing tutorial from https://observablehq.com/@ericd9799/learning-stacked-bar-chart-in-d3-js
+    //referencing tutorial from http://bl.ocks.org/mstanaland/6100713
+    // append the svg object to the body of the page
         // Setup svg using Bostock's margin convention
         let svg = d3.select(selector)
         .classed("svg-container", true)
@@ -42,6 +42,7 @@ function stacked_sig() {
             .range([0, width])
             .padding(.1);
 
+        // create y linear scale
         let y = d3.scaleLinear()
         .domain([0,d3.max(dataset, d => d3.max(d, d=> d[1]))])
         .range([height,0]);
@@ -58,6 +59,7 @@ function stacked_sig() {
         .attr('transform', 'translate(' + (width/2) + ',25)')
         .text(xLabelText);
 
+
         let yAxis = svg.append("g")
         .attr("id", "yAxis")
         .call(d3.axisLeft(y))
@@ -66,9 +68,8 @@ function stacked_sig() {
         .attr('transform', 'translate(' + 90 + ', -12)')
         .text(yLabelText);;
 
-
+        // set colors same as in pie chart, green and red
         let colors = ['#88B791','#FF8484'];
-        //const color = d3.scaleOrdinal(d3.schemeCategory10);
 
         let div = d3.select(selector).append("div")
         .attr("class", "tooltip-stacked")
@@ -83,10 +84,12 @@ function stacked_sig() {
         .attr("transform", "translate(0," + height + ")")
         .call(x);
 
+        // create bars
         let rects = svg.selectAll(selector).data(dataset).enter()
         .append("g")
         .attr("fill", function(d, i) { return colors[i]; })
 
+        // add hover over functionality for details on demand
         rects.selectAll("rect")
            .data(d => d)
            .join("rect")
@@ -102,7 +105,7 @@ function stacked_sig() {
              div.transition()
              .duration(50)
              .style("opacity", 1);
-            
+
              div.html("Recycle: " + i.data.Yes + "; Do Not Recycle: " + i.data.No);
            })
 
@@ -122,12 +125,14 @@ function stacked_sig() {
         .attr("class", "legend")
         .attr("transform", function(d, i) { return "translate(30," + i * 19 + ")"; });
 
+        // add legend box
         legend.append("rect")
         .attr("x", width - 18)
         .attr("width", 14)
         .attr("height", 14)
         .style("fill", function(d, i) {return colors.slice()[i];});
 
+        // add legend text
         legend.append("text")
         .attr("x", width + 5)
         .attr("y", 9)
@@ -141,6 +146,7 @@ function stacked_sig() {
         }
         });
 
+        // add title
         svg.append("text")
                 .attr("x", (width / 2))
                 .attr("y", 0 - (margin.top / 2))

@@ -20,10 +20,10 @@ function stacked() {
     // Create the chart by adding an svg to the div with the id
     // specified by the selector using the given data
     function chart(selector, data) {
-  //using tutorial from https://www.d3-graph-gallery.com/graph/barplot_stacked_basicWide.html
-  //using tutorial from https://observablehq.com/@ericd9799/learning-stacked-bar-chart-in-d3-js
-  //using tutorial from http://bl.ocks.org/mstanaland/6100713
-  // append the svg object to the body of the page
+    //referencing tutorial from https://www.d3-graph-gallery.com/graph/barplot_stacked_basicWide.html
+    //referencing tutorial from https://observablehq.com/@ericd9799/learning-stacked-bar-chart-in-d3-js
+    //referencing tutorial from http://bl.ocks.org/mstanaland/6100713
+    // append the svg object to the body of the page
         // Setup svg using Bostock's margin convention
         let svg = d3.select(selector)
         .classed("svg-container", true)
@@ -43,6 +43,7 @@ function stacked() {
             .range([0, width])
             .padding(.1);
 
+        // create linear y axis
         let y = d3.scaleLinear()
         .domain([0,d3.max(dataset, d => d3.max(d, d=> d[1]))])
         .range([height,0]);
@@ -67,7 +68,7 @@ function stacked() {
         .attr('transform', 'translate(' + 90 + ', -12)')
         .text(yLabelText);;
 
-
+        // colors to match pie chart and other stacked bar charts
         let colors = ['#88B791','#FF8484'];
 
         svg.append("g")
@@ -80,8 +81,8 @@ function stacked() {
         .call(x);
 
         let div = d3.select(selector).append("div")
-      .attr("class", "tooltip-stacked")
-      .style("opacity", 0);
+        .attr("class", "tooltip-stacked")
+        .style("opacity", 0);
 
         let rects = svg.selectAll(selector).data(dataset).enter()
         .append("g")
@@ -103,7 +104,7 @@ function stacked() {
              div.transition()
              .duration(50)
              .style("opacity", 1);
-            
+
              div.html("Recycle: " + i.data.Yes + "; Do Not Recycle: " + i.data.No);
            })
 
@@ -115,7 +116,7 @@ function stacked() {
              .duration('50')
              .style("opacity", 0);
           })
-           
+
 
         // Draw legend
         let legend = svg.selectAll(".legend")
@@ -124,12 +125,14 @@ function stacked() {
         .attr("class", "legend")
         .attr("transform", function(d, i) { return "translate(30," + i * 19 + ")"; });
 
+        // add legend rbox
         legend.append("rect")
         .attr("x", width - 18)
         .attr("width", 14)
         .attr("height", 14)
         .style("fill", function(d, i) {return colors.slice()[i];});
 
+        // add legend text
         legend.append("text")
         .attr("x", width + 5)
         .attr("y", 9)
@@ -143,6 +146,7 @@ function stacked() {
         }
         });
 
+        // add title
         svg.append("text")
                 .attr("x", (width / 2))
                 .attr("y", 0 - (margin.top / 2))
@@ -171,8 +175,6 @@ function stacked() {
         yLabelOffsetPx = _;
         return chart;
         };
-
-
 
         // Gets or sets the dispatcher we use for selection events
         chart.selectionDispatcher = function (_) {

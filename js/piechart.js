@@ -34,12 +34,15 @@ function piechart() {
                         .attr("transform", "translate(" + ((width / 2) - 25) + "," + height / 4 + ")");
 
       // Using tutorial from https://www.tutorialsteacher.com/d3js/create-pie-chart-using-d3js for pie chart
+      // set colors green and red with low saturation
       let color = d3.scaleOrdinal(['#88B791','#FF8484']);
 
+      // create pie using pie function
       let pie = d3.pie().value(function(d) {
           return d.Count;
         });
 
+      // create div
       let div = d3.select(selector).append("div")
       .attr("class", "tooltip-piechart")
       .style("opacity", 0);
@@ -48,6 +51,7 @@ function piechart() {
                .outerRadius(radius - 10)
                .innerRadius(0);
 
+      // set label location
       let label = d3.arc()
                 .outerRadius(radius)
                 .innerRadius(radius - 80);
@@ -81,8 +85,6 @@ function piechart() {
                  })
 
 
-
-
       arc.append("path")
          .attr("d", path)
          .attr("fill", function(d) { return color(d.data.Name); });
@@ -94,6 +96,7 @@ function piechart() {
          .text(function(d) { return d.data.Name; })
          .attr("font-size","10px");
 
+      // append title
       svg.append("text")
               .attr("x", (width / 2))
               .attr("y", -10 - (margin.top / 2))
