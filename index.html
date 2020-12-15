@@ -6,8 +6,8 @@
   <meta charset='utf-8'>
 
   <!-- Title -->
-  <title>Project Team ##: Topic, DS 4200 F20</title>
-  
+  <title>Project Team 9: Environment, DS 4200 F20</title>
+
   <!-- CSS Styling -->
   <link rel='stylesheet' href='style.css'>
 
@@ -26,68 +26,155 @@
 <body>
 
   <!-- Update this with your GitHub repo URL -->
-  <span id='forkongithub'><a href='https://github.com/NEU-DS-4200-F20-Staff/Project'>Fork me on GitHub</a></span>
+  <span id='forkongithub'><a href='https://github.com/NEU-DS-4200-F20/project-group-9-environmental.git'>Fork me on GitHub</a></span>
 
   <!-- Writeup -->
   <div class='content-column'>
-   <h1>Project Team ##: Topic, DS4200 F20</h1>
-    
-    <p><strong>Student One</strong>, <strong>Student Two</strong>, <strong>Student Three</strong></p>
-    
+   <h1>Project Team #9: Environment, DS4200 F20</h1>
+
+    <p><strong>Derek Brenner</strong>, <strong>Julia Nitschke</strong></p>
+    <!-- <strong>Samyak Jain</strong> -->
+
     <p>Service-Learning Course Project as part of
-	<a href='https://canvas.instructure.com/courses/1781732'>DS 4200 F20: Information Visualization</a>, 
-	taught by <a href='https://cody.khoury.northeastern.edu/'>Prof. Cody Dunne</a>, 
-	<a href='https://visualization.khoury.northeastern.edu/'>Data Visualization @ Khoury</a>, 
+	<a href='https://canvas.instructure.com/courses/1781732'>DS 4200 F20: Information Visualization</a>,
+	taught by <a href='https://cody.khoury.northeastern.edu/'>Prof. Cody Dunne</a>,
+	<a href='https://visualization.khoury.northeastern.edu/'>Data Visualization @ Khoury</a>,
 	<a href='https://www.khoury.northeastern.edu/'>Northeastern University</a>.</p>
-    
-    
+
+
     <h1>Abstract</h1>
-    
-    <p>Replace with your paper abstract.</p>
 
-    
+    <p>This project is about the relationship between economic behavior, education, and outcomes,
+      and particularly their relation to environmental concern. The idea that people should become
+      more aware of environmental issues is not enough; we need pro-environmental action.
+      We are particularly interested in what kind of information impacts people's perceptions
+      of their actions, and the trigger points that make people act on their knowledge and awareness.
+      In this project, we compare survey respondents' recycling perceptions to actual recycling data
+      from public data sets. We also look at how people's recycling actions relate to their overall
+      environmental concern, as well as willingness to participate in other positive environmental
+      action. Our partner is a research team at Northeastern led by economics professor Dr. Venkatesan.
+      The data used in this project is from a survey conducted by Dr. Venkatesan and a group
+      of Northeastern students.</p>
+
+
     <h1>Visualization</h1>
-    
-    <p>Include the interactive visualization as part of this page. Static example follows.</p>
 
-    
+    <p>You can interact with the public dataset graphs by highlighting either points on the line graph or rows in the table.
+    The corresponding data points in the other graph will be highlighted as well. <br>
+    <br>
+    You can interact with the Northeastern University survey result graphs by hovering over the pie chart sections or bars to get
+    details on the precise values in the dataset.
+
+  </p>
+
+
   </div>
-  
+
   <!-- Visualization goes here -->
+  <h2> Public Dataset Results </h2>
+  <h5> Data on Plastics in Municpal Solid Waste (MSW) by Weight (in thousands of U.S. tons) </h5>
+  <h6> Data from <a href='https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/plastics-material-specific-data'>Envrionmental Protection Agency</a></h6>
+
+
+  <p>In 2018, only around 8.5% of plastics produced were recycled. A majority of these plastics ended up in landfills.</p> <br>
+
+  <br>
+
   <div class='vis-holder'>
-    <!-- Change viewbox to whatever you want, e.g., '0 0 1000 6000' This determines your aspect ratio and coordinate system -->    
+    <div class='linechart-holder' id='linechart'></div>
+    <div class='table-holder' id='table'></div>
+    <!-- Change viewbox to whatever you want, e.g., '0 0 1000 6000' This determines your aspect ratio and coordinate system -->
     <!-- Delete all the sample SVG code below after the viewbox to before the closing tag. Populate this part of the SVG with D3. -->
-    <svg id='vis-svg-1'
-      preserveAspectRatio='xMidYMid meet' class='vis-svg' viewBox='0 0 1000 1000' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
-      
-      
-      <text x='30%' y='35%' text-anchor='middle'>A</text>
-      <text x='70%' y='35%' text-anchor='middle'>B</text>
-      <rect x='20%' y='40%' width='20%' height='20%' fill='yellow'></rect>
-      <circle cx='70%' cy='50%' r='10%' fill='blue'></circle>
-      
-      
-    <!-- Don't delete the closing tag! -->
-    </svg>
   </div>
-  
+  <p>* Note that the time between years is not consistent and is based on the data that is publicly available.</p>
+  <h2> Northeastern University Survey Results </h2>
+  <div class='vis-holder2'>
+    <div class='piechart-holder' id='piechart'></div>
+    <div class='stacked-holder' id='stacked'></div>
+  </div>
+    <div class='vis-holder3'>
+    <div class='stacked2-holder' id='stacked2'></div>
+    <div class='stacked3-holder' id='stacked3'></div>
+  </div>
+
+
+
   <!-- Further writeup -->
   <div class = 'content-column'>
 
     <h1>Demo Video</h1>
-    
-    <p>Embed an MP4 demo video using the HTML5 &lt;video&gt; tag. For example, this screen recording Prof. Cody Dunne made of Mike Bostock's flexible transitions in D3 slide:</p>
-    
+
     <video controls width='100%'>
-      <source src='http://www.ccs.neu.edu/home/cody/courses/shared/d3-flexible-transitions.mp4' type='video/mp4'>
+      <source src='EnvironmentalAction.mp4' type='video/mp4'>
       <p>Your browser doesn't support HTML5 video. Here is
-       a <a href='http://www.ccs.neu.edu/home/cody/courses/shared/d3-flexible-transitions.mp4'>link to the video</a> instead.</p>
+       a <a href='https://www.youtube.com/watch?v=HOUt-Sxe7u0&feature=youtu.be'>link to the video</a> instead.</p>
     </video>
 
     <h1>Visualization explanation</h1>
-    
-    <p>Replace with a brief explanation (can be copied from the paper) and linked presentation slides.</p>
-    
+
+    <p> Public Data Visualizations: <br>
+    <br>
+    For our public data visualizations, we chose to include a line
+    graph and a table with correlating data for the viewer to visualize
+    how much waste has been recycled over time. For the first visualization, it is a line graph depicting the percentages of waste recycled
+    over time. The data we used here was parsed from the existing
+    public data set, using a simple division calculation for ease of understanding for the audience. We chose a line graph because they best
+    depict trends over time, which is the most important factor for this
+    visualization. The line graph also changes in size depending on the
+    size of the browser, so that it is always easily readable no matter the
+    dimensions. When viewing the line graph, there are several points
+    that are shown as small circles, which are the exact data points used
+    to construct the graph. These circles can then be selected by the user
+    to see the corresponding data in the adjacent table (more information
+    below). The encodings we used were the y-coordinate of a point as
+    a representation of the percentage, and the progression of the x-axis
+    as the change in time.<br>
+
+    <br> The second visualization pertaining to the public data set was a
+    table showing all of the values given from this data set, including
+    the year, how much waste was generated and recycled, and the percentage of recycled waste. The table provides clarity to the audience
+    on the exact number of tons that were generated and recycled, and
+    can provide context for the line graph right beside it. Users can
+    also analyze and link the data from the line graph to the table using
+    brushing and linking, where if the user clicks and drags, they can
+    create a box that will match data from the table to the line graph, or
+    vice versa. This method makes it easy for users to draw analyses
+    based on the information from the line graph and the table with the
+    public data, as well as understanding which data points are linked to
+    each other.<br>
+
+    <br>
+    <br>
+    Northeastern University Survey Results Visualizations:<br>
+    <br>
+    To visualize the Northeastern survey results, we used a series
+    of pie charts and stacked bar charts. The data is mostly qualitative
+    and proportions matter, so these graphs satisfy both of these data
+    elements. We kept the color encoding consistent across the visualizations,
+    with the light red/pink color denoting not routeinely recycling and the
+    light green meaning routinely recycling. We used light colors
+    so saturation isn’t too high and the text is easy to read. We kept the colors
+    consistent across graphs because they represent the same attribute.
+    We made these specific color decisions because of the general association
+    of red meaning stop/no and green meaning go/yes, but also
+    because green has an association with positive environmental action.<br>
+
+    <br>In each graph, the user hover over the pie chart sections or bar
+    chart sections to see more detail. The more precise values associated
+    with that section will show to provide more information. The user
+    can compare how answers to the questions change based on whether
+    or not the respondent routinely recycles, and also look at overall
+    sentiment toward the questions.<br>
+
+    <br>
+
+    Link to presentation: <a href='https://docs.google.com/presentation/d/1nb-UOFND3C7FYfOCnFffYX11PiQjngy98p3pqMwgzI0/edit?usp=sharing'>
+    Google Slides</a>
+
+
+
+    </p>
+
     <h1>Acknowledgments</h1>
 
     <p>
@@ -95,6 +182,22 @@
     </p>
 
     <ul>
+      <li><a href="http://www.d3noob.org/2013/02/add-html-table-to-your-d3js-graph.html">
+        Add an HTML table to your d3.js graph</a>
+      by an anonymous source to create a table in d3.
+      </li>
+      <li><a href="http://bl.ocks.org/jonahwilliams/cc2de2eedc3896a3a96d">
+        Example of an interactive HTML Table</a>
+        by Jonah Williams
+      </li>
+      <li><a href="https://stackoverflow.com/questions/15709304/d3-color-change-on-mouseover-using-classedactive-true">
+        Color Change on Mouseover</a>
+        by stackoverflow. Example of mousedown and mouseover events used to select elements in the table.
+      </li>
+      <li><a href="https://stackoverflow.com/questions/322378/javascript-check-if-mouse-button-down">
+        Check if Mouse Button Down?</a>
+        by stackoverflow. Answer to how to use a mousedown and mouseup event.
+      </li>
       <li><a href='https://d3js.org/'>
         D3: Data-Driven Documents</a>
         by Mike Bostock is used for manipulating the DOM to create visualizations.
@@ -103,11 +206,33 @@
         Pure CSS responsive 'Fork me on GitHub' ribbon</a>
         by Chris Heilmann is used to create the banner that links back to the source code repository.
       </li>
+      <li><a href='https://www.d3-graph-gallery.com/graph/barplot_stacked_basicWide.html#'>
+        Most basic stacked barplot in d3.js</a>
+        tutorial is used for learning how to create a basic stacked bar chart.
+      </li>
+      <li><a href='https://observablehq.com/@ericd9799/learning-stacked-bar-chart-in-d3-js#'>
+        Learning Stacked Bar Chart in D3</a>
+        is used to connect Mike Bostock's model to the stacked bar chart.
+      </li>
+      <li><a href='http://bl.ocks.org/mstanaland/6100713#'>
+        Stacked bar chart with tooltips</a>
+        is used to learn how to implement hover-over functionality in the stacked bar chart.
+      </li>
+      <li><a href='https://www.tutorialsteacher.com/d3js/create-pie-chart-using-d3js#'>
+        Create Pie Chart using D3</a>
+        is used to learn how to implement a basic pie chart.
+      </li>
     </ul>
   </div>
-  
+
   <!-- Scripts at the end avoid need for dealing with async, defer, or onload event handlers -->
   <script src='lib/d3.v6.1.1/d3.min.js'></script>
   <script src='js/visualization.js'></script>
+  <script src='js/table.js'></script>
+  <script src='js/piechart.js'></script>
+  <script src='js/stacked1.js'></script>
+  <script src='js/linechart.js'></script>
+  <script src='js/stacked2.js'></script>
+  <script src='js/stacked3.js'></script>
 </body>
 </html>

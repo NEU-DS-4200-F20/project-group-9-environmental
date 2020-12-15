@@ -1,0 +1,2251 @@
+{
+  "title" : "",
+  "description" : "",
+  "author" : "",
+  "targetLoudness" : -18.0,
+  "shouldApplyLoudnessNormalization" : true,
+  "videoFormatFrameRate" : 30,
+  "audioFormatSampleRate" : 44100,
+  "width" : 1728.0,
+  "height" : 1080.0,
+  "version" : "4.0",
+  "editRate" : 30,
+  "authoringClientName" :  {
+    "name" : "Camtasia",
+    "platform" : "Mac",
+    "version" : "2020.0.12"
+  },
+  "sourceBin" : [
+    {
+      "id" : 1,
+      "src" : "./recordings/1607274905.081348/Rec 12-6-2020.trec",
+      "rect" : [0, 0, 2560, 1600],
+      "lastMod" : "20201206T164058",
+      "sourceTracks" : [
+        {
+          "range" : [0, 1174],
+          "type" : 0,
+          "editRate" : 30,
+          "trackRect" : [0, 0, 2560, 1600],
+          "sampleRate" : 29,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : "2b7b6a01-7a1f-11e2-83d0-0017f200be7f;2b7b6af0-7a1f-11e2-83d0-0017f200be7f;2b7b6af1-7a1f-11e2-83d0-0017f200be7f;2b7b6af2-7a1f-11e2-83d0-0017f200be7f;2b7b6af3-7a1f-11e2-83d0-0017f200be7f;2b7b6af5-7a1f-11e2-83d0-0017f200be7f;2b7b6af6-7a1f-11e2-83d0-0017f200be7f;2b7b6af7-7a1f-11e2-83d0-0017f200be7f;2b7b6af8-7a1f-11e2-83d0-0017f200be7f;2b7b6af9-7a1f-11e2-83d0-0017f200be7f;2b7b6afa-7a1f-11e2-83d0-0017f200be7f;2b7b6afb-7a1f-11e2-83d0-0017f200be7f;2b7b6afc-7a1f-11e2-83d0-0017f200be7f;"
+        },
+        {
+          "range" : [0, 1731584],
+          "type" : 2,
+          "editRate" : 44100,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 16,
+          "numChannels" : 2,
+          "integratedLUFS" : -51.3339574612968,
+          "peakLevel" : 0.038665771484375,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20201206T164059.274895"
+      }
+    },
+    {
+      "id" : 2,
+      "src" : "./media/1607274905.083105/Rec 12-6-2020 1.m4a",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20201206T164141",
+      "sourceTracks" : [
+        {
+          "range" : [0, 2879],
+          "type" : 2,
+          "editRate" : 1000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "integratedLUFS" : -34.1368888341186,
+          "peakLevel" : 0.0935506075620651,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20201206T164141.655404"
+      }
+    },
+    {
+      "id" : 3,
+      "src" : "./recordings/1607274905.083401/Rec 12-6-2020 2.trec",
+      "rect" : [0, 0, 2560, 1600],
+      "lastMod" : "20201206T170304",
+      "sourceTracks" : [
+        {
+          "range" : [0, 690],
+          "type" : 0,
+          "editRate" : 30,
+          "trackRect" : [0, 0, 2560, 1600],
+          "sampleRate" : 29,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : "2b7b6a01-7a1f-11e2-83d0-0017f200be7f;2b7b6af0-7a1f-11e2-83d0-0017f200be7f;2b7b6af1-7a1f-11e2-83d0-0017f200be7f;2b7b6af2-7a1f-11e2-83d0-0017f200be7f;2b7b6af3-7a1f-11e2-83d0-0017f200be7f;2b7b6af5-7a1f-11e2-83d0-0017f200be7f;2b7b6af6-7a1f-11e2-83d0-0017f200be7f;2b7b6af7-7a1f-11e2-83d0-0017f200be7f;2b7b6af8-7a1f-11e2-83d0-0017f200be7f;2b7b6af9-7a1f-11e2-83d0-0017f200be7f;2b7b6afa-7a1f-11e2-83d0-0017f200be7f;2b7b6afb-7a1f-11e2-83d0-0017f200be7f;2b7b6afc-7a1f-11e2-83d0-0017f200be7f;"
+        },
+        {
+          "range" : [0, 1021952],
+          "type" : 2,
+          "editRate" : 44100,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 16,
+          "numChannels" : 2,
+          "integratedLUFS" : -32.3397069752894,
+          "peakLevel" : 0.3118896484375,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20201206T170304.643921"
+      }
+    },
+    {
+      "id" : 4,
+      "src" : "./recordings/1607274905.083627/Rec 12-6-2020 4.trec",
+      "rect" : [0, 0, 2560, 1600],
+      "lastMod" : "20201206T170439",
+      "sourceTracks" : [
+        {
+          "range" : [0, 396],
+          "type" : 0,
+          "editRate" : 30,
+          "trackRect" : [0, 0, 2560, 1600],
+          "sampleRate" : 29,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : "2b7b6a01-7a1f-11e2-83d0-0017f200be7f;2b7b6af0-7a1f-11e2-83d0-0017f200be7f;2b7b6af1-7a1f-11e2-83d0-0017f200be7f;2b7b6af2-7a1f-11e2-83d0-0017f200be7f;2b7b6af3-7a1f-11e2-83d0-0017f200be7f;2b7b6af5-7a1f-11e2-83d0-0017f200be7f;2b7b6af6-7a1f-11e2-83d0-0017f200be7f;2b7b6af7-7a1f-11e2-83d0-0017f200be7f;2b7b6af8-7a1f-11e2-83d0-0017f200be7f;2b7b6af9-7a1f-11e2-83d0-0017f200be7f;2b7b6afa-7a1f-11e2-83d0-0017f200be7f;2b7b6afb-7a1f-11e2-83d0-0017f200be7f;2b7b6afc-7a1f-11e2-83d0-0017f200be7f;"
+        },
+        {
+          "range" : [0, 585728],
+          "type" : 2,
+          "editRate" : 44100,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 16,
+          "numChannels" : 2,
+          "integratedLUFS" : -31.0579258047362,
+          "peakLevel" : 0.227813720703125,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20201206T170439.800643"
+      }
+    },
+    {
+      "id" : 5,
+      "src" : "./recordings/1607274905.083818/Rec 12-6-2020 5.trec",
+      "rect" : [0, 0, 2560, 1600],
+      "lastMod" : "20201206T170616",
+      "sourceTracks" : [
+        {
+          "range" : [0, 2552],
+          "type" : 0,
+          "editRate" : 30,
+          "trackRect" : [0, 0, 2560, 1600],
+          "sampleRate" : 29,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : "2b7b6a01-7a1f-11e2-83d0-0017f200be7f;2b7b6af0-7a1f-11e2-83d0-0017f200be7f;2b7b6af1-7a1f-11e2-83d0-0017f200be7f;2b7b6af2-7a1f-11e2-83d0-0017f200be7f;2b7b6af3-7a1f-11e2-83d0-0017f200be7f;2b7b6af5-7a1f-11e2-83d0-0017f200be7f;2b7b6af6-7a1f-11e2-83d0-0017f200be7f;2b7b6af7-7a1f-11e2-83d0-0017f200be7f;2b7b6af8-7a1f-11e2-83d0-0017f200be7f;2b7b6af9-7a1f-11e2-83d0-0017f200be7f;2b7b6afa-7a1f-11e2-83d0-0017f200be7f;2b7b6afb-7a1f-11e2-83d0-0017f200be7f;2b7b6afc-7a1f-11e2-83d0-0017f200be7f;"
+        },
+        {
+          "range" : [0, 3762176],
+          "type" : 2,
+          "editRate" : 44100,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 16,
+          "numChannels" : 2,
+          "integratedLUFS" : -32.606530799652,
+          "peakLevel" : 0.246826171875,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20201206T170616.783327"
+      }
+    },
+    {
+      "id" : 6,
+      "src" : "./media/1607274905.084006/Rec 12-6-2020 6.m4a",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20201206T170647",
+      "sourceTracks" : [
+        {
+          "range" : [0, 3715],
+          "type" : 2,
+          "editRate" : 1000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "integratedLUFS" : -26.4378038099999,
+          "peakLevel" : 0.368769466876984,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20201206T170647.122060"
+      }
+    },
+    {
+      "id" : 7,
+      "src" : "./media/1607274905.084292/Rec 12-6-2020 7.m4a",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20201206T170702",
+      "sourceTracks" : [
+        {
+          "range" : [0, 1323],
+          "type" : 2,
+          "editRate" : 1000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "integratedLUFS" : -26.7248856586436,
+          "peakLevel" : 0.193543046712875,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20201206T170702.909901"
+      }
+    },
+    {
+      "id" : 8,
+      "src" : "./media/1607274905.084634/Rec 12-6-2020 8.m4a",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20201206T170751",
+      "sourceTracks" : [
+        {
+          "range" : [0, 39752],
+          "type" : 2,
+          "editRate" : 1000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "integratedLUFS" : -29.8217088841306,
+          "peakLevel" : 0.357600420713425,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20201206T170751.166932"
+      }
+    },
+    {
+      "id" : 9,
+      "src" : "./media/1607274905.084898/Rec 12-6-2020 9.m4a",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20201206T170821",
+      "sourceTracks" : [
+        {
+          "range" : [0, 4969],
+          "type" : 2,
+          "editRate" : 1000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "integratedLUFS" : -31.3238367778524,
+          "peakLevel" : 0.173879683017731,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20201206T170821.371467"
+      }
+    },
+    {
+      "id" : 10,
+      "src" : "./media/1607274905.085189/Rec 12-6-2020 10.m4a",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20201206T170906",
+      "sourceTracks" : [
+        {
+          "range" : [0, 9404],
+          "type" : 2,
+          "editRate" : 1000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "integratedLUFS" : -29.7474600751482,
+          "peakLevel" : 0.254010856151581,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20201206T170906.507901"
+      }
+    },
+    {
+      "id" : 11,
+      "src" : "./media/1607274905.085396/Rec 12-6-2020 11.m4a",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20201206T170933",
+      "sourceTracks" : [
+        {
+          "range" : [0, 6594],
+          "type" : 2,
+          "editRate" : 1000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "integratedLUFS" : -29.7354994198904,
+          "peakLevel" : 0.254148930311203,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20201206T170933.265214"
+      }
+    },
+    {
+      "id" : 12,
+      "src" : "./media/1607274905.085640/Rec 12-6-2020 12.m4a",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20201206T171015",
+      "sourceTracks" : [
+        {
+          "range" : [0, 10054],
+          "type" : 2,
+          "editRate" : 1000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "integratedLUFS" : -29.2574240373263,
+          "peakLevel" : 0.311729818582535,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20201206T171015.985355"
+      }
+    },
+    {
+      "id" : 13,
+      "src" : "./media/1607274905.085935/Rec 12-6-2020 13.m4a",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20201206T171034",
+      "sourceTracks" : [
+        {
+          "range" : [0, 2414],
+          "type" : 2,
+          "editRate" : 1000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "integratedLUFS" : -27.0828018820283,
+          "peakLevel" : 0.328917622566223,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20201206T171034.830077"
+      }
+    },
+    {
+      "id" : 14,
+      "src" : "./media/1607274905.086232/Rec 12-6-2020 14.m4a",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20201206T171107",
+      "sourceTracks" : [
+        {
+          "range" : [0, 29326],
+          "type" : 2,
+          "editRate" : 1000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "integratedLUFS" : -29.5613734251923,
+          "peakLevel" : 0.576529979705811,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20201206T171107.388359"
+      }
+    },
+    {
+      "id" : 15,
+      "src" : "./media/1607274905.086651/Rec 12-6-2020 15.m4a",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20201206T171305",
+      "sourceTracks" : [
+        {
+          "range" : [0, 29396],
+          "type" : 2,
+          "editRate" : 1000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "integratedLUFS" : -28.8521999947794,
+          "peakLevel" : 0.39611890912056,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20201206T171305.538297"
+      }
+    },
+    {
+      "id" : 16,
+      "src" : "./recordings/1607274992.448413/Rec 12-6-2020 16.trec",
+      "rect" : [0, 0, 2560, 1600],
+      "lastMod" : "20201206T171534",
+      "sourceTracks" : [
+        {
+          "range" : [0, 421],
+          "type" : 0,
+          "editRate" : 30,
+          "trackRect" : [0, 0, 2560, 1600],
+          "sampleRate" : 28,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : "2b7b6a01-7a1f-11e2-83d0-0017f200be7f;2b7b6af0-7a1f-11e2-83d0-0017f200be7f;2b7b6af1-7a1f-11e2-83d0-0017f200be7f;2b7b6af2-7a1f-11e2-83d0-0017f200be7f;2b7b6af3-7a1f-11e2-83d0-0017f200be7f;2b7b6af5-7a1f-11e2-83d0-0017f200be7f;2b7b6af6-7a1f-11e2-83d0-0017f200be7f;2b7b6af7-7a1f-11e2-83d0-0017f200be7f;2b7b6af8-7a1f-11e2-83d0-0017f200be7f;2b7b6af9-7a1f-11e2-83d0-0017f200be7f;2b7b6afa-7a1f-11e2-83d0-0017f200be7f;2b7b6afb-7a1f-11e2-83d0-0017f200be7f;2b7b6afc-7a1f-11e2-83d0-0017f200be7f;"
+        },
+        {
+          "range" : [0, 624640],
+          "type" : 2,
+          "editRate" : 44100,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 16,
+          "numChannels" : 2,
+          "integratedLUFS" : -55.0141683095944,
+          "peakLevel" : 0.020233154296875,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20201206T171534.770183"
+      }
+    },
+    {
+      "id" : 17,
+      "src" : "./recordings/1607274992.448642/Rec 12-6-2020 17.trec",
+      "rect" : [0, 0, 2560, 1600],
+      "lastMod" : "20201206T171618",
+      "sourceTracks" : [
+        {
+          "range" : [0, 362],
+          "type" : 0,
+          "editRate" : 30,
+          "trackRect" : [0, 0, 2560, 1600],
+          "sampleRate" : 29,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : "2b7b6a01-7a1f-11e2-83d0-0017f200be7f;2b7b6af0-7a1f-11e2-83d0-0017f200be7f;2b7b6af1-7a1f-11e2-83d0-0017f200be7f;2b7b6af2-7a1f-11e2-83d0-0017f200be7f;2b7b6af3-7a1f-11e2-83d0-0017f200be7f;2b7b6af5-7a1f-11e2-83d0-0017f200be7f;2b7b6af6-7a1f-11e2-83d0-0017f200be7f;2b7b6af7-7a1f-11e2-83d0-0017f200be7f;2b7b6af8-7a1f-11e2-83d0-0017f200be7f;2b7b6af9-7a1f-11e2-83d0-0017f200be7f;2b7b6afa-7a1f-11e2-83d0-0017f200be7f;2b7b6afb-7a1f-11e2-83d0-0017f200be7f;2b7b6afc-7a1f-11e2-83d0-0017f200be7f;"
+        },
+        {
+          "range" : [0, 537600],
+          "type" : 2,
+          "editRate" : 44100,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 16,
+          "numChannels" : 2,
+          "integratedLUFS" : -56.2678810455108,
+          "peakLevel" : 0.0186767578125,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20201206T171618.799916"
+      }
+    },
+    {
+      "id" : 18,
+      "src" : "./media/1607275500.198116/Rec 12-6-2020 18.m4a",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20201206T172014",
+      "sourceTracks" : [
+        {
+          "range" : [0, 8870],
+          "type" : 2,
+          "editRate" : 1000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "integratedLUFS" : -28.4318772195799,
+          "peakLevel" : 0.358728766441345,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20201206T172014.429635"
+      }
+    },
+    {
+      "id" : 19,
+      "src" : "./media/1607275500.198547/Rec 12-6-2020 19.m4a",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20201206T172029",
+      "sourceTracks" : [
+        {
+          "range" : [0, 10727],
+          "type" : 2,
+          "editRate" : 1000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "integratedLUFS" : -28.0878984288184,
+          "peakLevel" : 0.32094994187355,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20201206T172029.782491"
+      }
+    },
+    {
+      "id" : 20,
+      "src" : "./media/1607275500.198775/Rec 12-6-2020 20.m4a",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20201206T172223",
+      "sourceTracks" : [
+        {
+          "range" : [0, 9334],
+          "type" : 2,
+          "editRate" : 1000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "integratedLUFS" : -28.0331160332702,
+          "peakLevel" : 0.439093947410583,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20201206T172223.798280"
+      }
+    },
+    {
+      "id" : 21,
+      "src" : "./media/1607275500.198985/Rec 12-6-2020 21.m4a",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20201206T172234",
+      "sourceTracks" : [
+        {
+          "range" : [0, 7383],
+          "type" : 2,
+          "editRate" : 1000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "integratedLUFS" : -28.491717546452,
+          "peakLevel" : 0.255923509597778,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20201206T172234.480251"
+      }
+    },
+    {
+      "id" : 22,
+      "src" : "./media/1607275500.199452/Rec 12-6-2020 22.m4a",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20201206T172245",
+      "sourceTracks" : [
+        {
+          "range" : [0, 7244],
+          "type" : 2,
+          "editRate" : 1000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "integratedLUFS" : -26.713084194822,
+          "peakLevel" : 0.27984356880188,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20201206T172245.744256"
+      }
+    },
+    {
+      "id" : 23,
+      "src" : "./media/1607275500.199674/Rec 12-6-2020 23.m4a",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20201206T172300",
+      "sourceTracks" : [
+        {
+          "range" : [0, 8591],
+          "type" : 2,
+          "editRate" : 1000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "integratedLUFS" : -25.5318503831221,
+          "peakLevel" : 0.376230210065842,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20201206T172300.727216"
+      }
+    }
+  ],
+  "timeline" : {
+    "id" : 24,
+    "sceneTrack" : {
+      "scenes" : [
+        {
+          "csml" : {
+            "tracks" : [
+              {
+                "trackIndex" : 0,
+                "medias" : [
+                  {
+                    "id" : 25,
+                    "_type" : "Callout",
+                    "def" : {
+                      "kind" : "remix",
+                      "shape" : "text",
+                      "style" : "basic",
+                      "height" : 250.0,
+                      "line-spacing" : -0.0706080386513158,
+                      "width" : 400.0,
+                      "word-wrap" : 1.0,
+                      "horizontal-alignment" : "left",
+                      "resize-behavior" : "resizeCallout",
+                      "text" : "Project Group #9: Environmental Action\n\nBy Derek Brenner and Julia Nitschke\n\nDS 4200 Fall 2020 - Prof. Cody Dunne, Northeastern University",
+                      "vertical-alignment" : "center",
+                      "font" : {
+                        "color-blue" : 1.0,
+                        "color-green" : 1.0,
+                        "color-red" : 1.0,
+                        "size" : 96.0,
+                        "tracking" : 0.0,
+                        "name" : "Montserrat",
+                        "weight" : "Regular"
+                      },
+                      "textAttributes" : {
+                        "type" : "textAttributeList",
+                        "keyframes" : [
+                          {
+                            "endTime" : 0,
+                            "time" : 0,
+                            "value" : [{"name":"strikethrough","rangeEnd":138,"rangeStart":0,"value":0,"valueType":"int"},{"name":"kerning","rangeEnd":138,"rangeStart":0,"value":0.042413651315789475,"valueType":"double"},{"name":"fontName","rangeEnd":138,"rangeStart":0,"value":"Helvetica Neue","valueType":"string"},{"name":"underline","rangeEnd":138,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontWeight","rangeEnd":138,"rangeStart":0,"value":400,"valueType":"int"},{"name":"fgColor","rangeEnd":138,"rangeStart":0,"value":"(255,255,255,255)","valueType":"color"},{"name":"fontItalic","rangeEnd":138,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontSize","rangeEnd":138,"rangeStart":0,"value":18,"valueType":"double"}],
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "attributes" : {
+                      "autoRotateText" : true
+                    },
+                    "parameters" : {
+                      "translation0" : 75.0,
+                      "translation1" : 15.0,
+                      "scale0" : 4.32,
+                      "scale1" : 4.32,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 7.42565476190407,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 0,
+                    "duration" : 150,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 150,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "AppliedThemeId" : "",
+                      "clipSpeedAttribute" : false,
+                      "default-callout-line-spacing" : "0",
+                      "default-callout-resize-behavior" : "resizeText",
+                      "default-scale" : "1",
+                      "default-text" : "{\\rtf1\\ansi\\ansicpg1252\\cocoartf1561\\cocoasubrtf600\n{\\fonttbl}\n{\\colortbl;\\red255\\green255\\blue255;}\n{\\*\\expandedcolortbl;;}\n}",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 26,
+                    "_type" : "UnifiedMedia",
+                    "video" : 
+                        {
+                          "id" : 27,
+                          "_type" : "ScreenVMFile",
+                          "src" : 5,
+                          "trackNumber" : 0,
+                          "attributes" : {
+                            "ident" : "Rec 12-6-2020 5"
+                          },
+                          "parameters" : {
+                            "translation1" : {
+                              "type" : "double",
+                              "defaultValue" : 73.0,
+                              "interp" : "eioe"
+                            },
+                            "scale0" : {
+                              "type" : "double",
+                              "defaultValue" : 0.675,
+                              "interp" : "eioe"
+                            },
+                            "scale1" : {
+                              "type" : "double",
+                              "defaultValue" : 0.675,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop0" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop1" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop2" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop3" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop0" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop1" : {
+                              "type" : "double",
+                              "defaultValue" : 215.390476190503,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop2" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop3" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "cursorScale" : {
+                              "type" : "double",
+                              "defaultValue" : 1.0,
+                              "interp" : "linr"
+                            },
+                            "cursorOpacity" : {
+                              "type" : "double",
+                              "defaultValue" : 1.0,
+                              "interp" : "linr"
+                            }
+                          },
+                          "effects" : [
+
+                          ],
+                          "start" : 150,
+                          "duration" : 1117,
+                          "mediaStart" : 0,
+                          "mediaDuration" : 1117,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        },
+                    "audio" : 
+                        {
+                          "id" : 28,
+                          "_type" : "AMFile",
+                          "src" : 5,
+                          "trackNumber" : 1,
+                          "attributes" : {
+                            "ident" : "",
+                            "gain" : 1.0,
+                            "mixToMono" : false
+                          },
+                            "channelNumber" : "0,1",
+                          "parameters" : {
+                            "volume" : 0.0
+                          },
+                          "effects" : [
+
+                          ],
+                          "start" : 150,
+                          "duration" : 1117,
+                          "mediaStart" : 0,
+                          "mediaDuration" : 1117,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        }
+,
+                    "start" : 150,
+                    "duration" : 1117,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 2552,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "0.675",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    }
+                  },
+                  {
+                    "id" : 29,
+                    "_type" : "UnifiedMedia",
+                    "video" : 
+                        {
+                          "id" : 30,
+                          "_type" : "ScreenVMFile",
+                          "src" : 5,
+                          "trackNumber" : 0,
+                          "attributes" : {
+                            "ident" : "Rec 12-6-2020 5"
+                          },
+                          "parameters" : {
+                            "translation1" : {
+                              "type" : "double",
+                              "defaultValue" : 73.0,
+                              "interp" : "eioe"
+                            },
+                            "scale0" : {
+                              "type" : "double",
+                              "defaultValue" : 0.675,
+                              "interp" : "eioe"
+                            },
+                            "scale1" : {
+                              "type" : "double",
+                              "defaultValue" : 0.675,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop0" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop1" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop2" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop3" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop0" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop1" : {
+                              "type" : "double",
+                              "defaultValue" : 215.390476190503,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop2" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop3" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "cursorScale" : {
+                              "type" : "double",
+                              "defaultValue" : 1.0,
+                              "interp" : "linr"
+                            },
+                            "cursorOpacity" : {
+                              "type" : "double",
+                              "defaultValue" : 1.0,
+                              "interp" : "linr"
+                            }
+                          },
+                          "effects" : [
+
+                          ],
+                          "start" : 1267,
+                          "duration" : 83,
+                          "mediaStart" : 1144,
+                          "mediaDuration" : 83,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        },
+                    "audio" : 
+                        {
+                          "id" : 31,
+                          "_type" : "AMFile",
+                          "src" : 5,
+                          "trackNumber" : 1,
+                          "attributes" : {
+                            "ident" : "",
+                            "gain" : 1.0,
+                            "mixToMono" : false
+                          },
+                            "channelNumber" : "0,1",
+                          "parameters" : {
+                            "volume" : 0.0
+                          },
+                          "effects" : [
+
+                          ],
+                          "start" : 1267,
+                          "duration" : 83,
+                          "mediaStart" : 1144,
+                          "mediaDuration" : 83,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        }
+,
+                    "start" : 1267,
+                    "duration" : 83,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 2552,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "0.675",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    }
+                  },
+                  {
+                    "id" : 32,
+                    "_type" : "UnifiedMedia",
+                    "video" : 
+                        {
+                          "id" : 33,
+                          "_type" : "ScreenVMFile",
+                          "src" : 5,
+                          "trackNumber" : 0,
+                          "attributes" : {
+                            "ident" : "Rec 12-6-2020 5"
+                          },
+                          "parameters" : {
+                            "translation1" : {
+                              "type" : "double",
+                              "defaultValue" : 73.0,
+                              "interp" : "eioe"
+                            },
+                            "scale0" : {
+                              "type" : "double",
+                              "defaultValue" : 0.675,
+                              "interp" : "eioe"
+                            },
+                            "scale1" : {
+                              "type" : "double",
+                              "defaultValue" : 0.675,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop0" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop1" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop2" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop3" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop0" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop1" : {
+                              "type" : "double",
+                              "defaultValue" : 215.390476190503,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop2" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop3" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "cursorScale" : {
+                              "type" : "double",
+                              "defaultValue" : 1.0,
+                              "interp" : "linr"
+                            },
+                            "cursorOpacity" : {
+                              "type" : "double",
+                              "defaultValue" : 1.0,
+                              "interp" : "linr"
+                            }
+                          },
+                          "effects" : [
+
+                          ],
+                          "start" : 1350,
+                          "duration" : 1211,
+                          "mediaStart" : 1250,
+                          "mediaDuration" : 1211,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        },
+                    "audio" : 
+                        {
+                          "id" : 34,
+                          "_type" : "AMFile",
+                          "src" : 5,
+                          "trackNumber" : 1,
+                          "attributes" : {
+                            "ident" : "",
+                            "gain" : 1.0,
+                            "mixToMono" : false
+                          },
+                            "channelNumber" : "0,1",
+                          "parameters" : {
+                            "volume" : 0.0
+                          },
+                          "effects" : [
+
+                          ],
+                          "start" : 1350,
+                          "duration" : 1211,
+                          "mediaStart" : 1250,
+                          "mediaDuration" : 1211,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        }
+,
+                    "start" : 1350,
+                    "duration" : 1211,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 2552,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "0.675",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    }
+                  },
+                  {
+                    "id" : 35,
+                    "_type" : "UnifiedMedia",
+                    "video" : 
+                        {
+                          "id" : 36,
+                          "_type" : "ScreenVMFile",
+                          "src" : 17,
+                          "trackNumber" : 0,
+                          "attributes" : {
+                            "ident" : "Rec 12-6-2020 17"
+                          },
+                          "parameters" : {
+                            "translation1" : {
+                              "type" : "double",
+                              "defaultValue" : 74.0,
+                              "interp" : "eioe"
+                            },
+                            "scale0" : {
+                              "type" : "double",
+                              "defaultValue" : 0.675,
+                              "interp" : "eioe"
+                            },
+                            "scale1" : {
+                              "type" : "double",
+                              "defaultValue" : 0.675,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop0" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop1" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop2" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop3" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop0" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop1" : {
+                              "type" : "double",
+                              "defaultValue" : 220.742857142885,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop2" : {
+                              "type" : "double",
+                              "defaultValue" : 1.87405646556726e-13,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop3" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "cursorScale" : {
+                              "type" : "double",
+                              "defaultValue" : 1.0,
+                              "interp" : "linr"
+                            },
+                            "cursorOpacity" : {
+                              "type" : "double",
+                              "defaultValue" : 1.0,
+                              "interp" : "linr"
+                            }
+                          },
+                          "effects" : [
+
+                          ],
+                          "start" : 2561,
+                          "duration" : 251,
+                          "mediaStart" : 38,
+                          "mediaDuration" : 251,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        },
+                    "audio" : 
+                        {
+                          "id" : 37,
+                          "_type" : "AMFile",
+                          "src" : 17,
+                          "trackNumber" : 1,
+                          "attributes" : {
+                            "ident" : "",
+                            "gain" : 1.0,
+                            "mixToMono" : false
+                          },
+                            "channelNumber" : "0,1",
+                          "parameters" : {
+                            "volume" : 0.0
+                          },
+                          "effects" : [
+
+                          ],
+                          "start" : 2561,
+                          "duration" : 251,
+                          "mediaStart" : 38,
+                          "mediaDuration" : 251,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        }
+,
+                    "start" : 2561,
+                    "duration" : 251,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 362,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "0.675",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 1,
+                "medias" : [
+                  {
+                    "id" : 38,
+                    "_type" : "AMFile",
+                    "src" : 8,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "Rec 12-6-2020 8",
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : 0.993462171052632
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 150,
+                    "duration" : 1174,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 1174,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "effectApplied" : "none"
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 39,
+                    "_type" : "AMFile",
+                    "src" : 11,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "Rec 12-6-2020 11",
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "effects" : [
+
+                    ],
+                    "start" : 1463,
+                    "duration" : 189,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 189,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "effectApplied" : "none"
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 40,
+                    "_type" : "AMFile",
+                    "src" : 12,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "Rec 12-6-2020 12",
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "effects" : [
+
+                    ],
+                    "start" : 1672,
+                    "duration" : 146,
+                    "mediaStart" : 25,
+                    "mediaDuration" : 146,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "effectApplied" : "none"
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 41,
+                    "_type" : "AMFile",
+                    "src" : 23,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "Rec 12-6-2020 23",
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "effects" : [
+
+                    ],
+                    "start" : 2554,
+                    "duration" : 254,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 254,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "effectApplied" : "none"
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 2,
+                "medias" : [
+                  {
+                    "id" : 42,
+                    "_type" : "Callout",
+                    "def" : {
+                      "kind" : "remix",
+                      "shape" : "text-rectangle",
+                      "style" : "basic",
+                      "fill-color-blue" : 0.843137254901961,
+                      "fill-color-green" : 0.843137254901961,
+                      "fill-color-opacity" : 1.0,
+                      "fill-color-red" : 1.0,
+                      "height" : 150.0,
+                      "line-spacing" : 0.0,
+                      "stroke-color-blue" : 0.56078431372549,
+                      "stroke-color-green" : 0.686274509803922,
+                      "stroke-color-opacity" : 1.0,
+                      "stroke-color-red" : 0.0196078431372549,
+                      "stroke-width" : 2.0,
+                      "tail-x" : 0.0,
+                      "tail-y" : -20.0,
+                      "width" : 350.0,
+                      "word-wrap" : 1.0,
+                      "fill-style" : "solid",
+                      "horizontal-alignment" : "center",
+                      "resize-behavior" : "resizeText",
+                      "stroke-style" : "solid",
+                      "text" : "y-axis: percentage of waste recycled",
+                      "vertical-alignment" : "center",
+                      "font" : {
+                        "color-blue" : 0.266666666666667,
+                        "color-green" : 0.231372549019608,
+                        "color-opacity" : 1.0,
+                        "color-red" : 0.184313725490196,
+                        "size" : 64.0,
+                        "tracking" : 0.0,
+                        "name" : "Montserrat",
+                        "weight" : "Regular"
+                      },
+                      "textAttributes" : {
+                        "type" : "textAttributeList",
+                        "keyframes" : [
+                          {
+                            "endTime" : 0,
+                            "time" : 0,
+                            "value" : [{"name":"fontWeight","rangeEnd":36,"rangeStart":0,"value":400,"valueType":"int"},{"name":"underline","rangeEnd":36,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontSize","rangeEnd":36,"rangeStart":0,"value":64,"valueType":"double"},{"name":"fontItalic","rangeEnd":36,"rangeStart":0,"value":0,"valueType":"int"},{"name":"kerning","rangeEnd":36,"rangeStart":0,"value":0,"valueType":"double"},{"name":"fgColor","rangeEnd":36,"rangeStart":0,"value":"(47,59,68,255)","valueType":"color"},{"name":"strikethrough","rangeEnd":36,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontName","rangeEnd":36,"rangeStart":0,"value":"Montserrat","valueType":"string"}],
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "attributes" : {
+                      "autoRotateText" : true
+                    },
+                    "parameters" : {
+                      "translation0" : -527.656059842857,
+                      "translation1" : 277.285256357143,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 14.929427699998,
+                      "geometryCrop3" : 0.0
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 593,
+                    "duration" : 111,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 111,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "AppliedThemeId" : "",
+                      "clipSpeedAttribute" : false,
+                      "default-callout-fill-color" : "(255,255,255,255)",
+                      "default-scale" : "1",
+                      "effectApplied" : "none"
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 43,
+                    "_type" : "Callout",
+                    "def" : {
+                      "kind" : "remix",
+                      "shape" : "speech-bubble2",
+                      "style" : "basic",
+                      "fill-color-blue" : 0.219607843137255,
+                      "fill-color-green" : 0.219607843137255,
+                      "fill-color-opacity" : 1.0,
+                      "fill-color-red" : 0.694117647058824,
+                      "height" : 180.0,
+                      "line-spacing" : 0.0,
+                      "stroke-color-blue" : 1.0,
+                      "stroke-color-green" : 1.0,
+                      "stroke-color-opacity" : 1.0,
+                      "stroke-color-red" : 1.0,
+                      "stroke-width" : 0.0,
+                      "tail-x" : -100.0,
+                      "tail-y" : -200.0,
+                      "width" : 350.0,
+                      "word-wrap" : 1.0,
+                      "fill-style" : "solid",
+                      "horizontal-alignment" : "center",
+                      "resize-behavior" : "resizeText",
+                      "stroke-style" : "solid",
+                      "text" : "Time between years is not constant",
+                      "vertical-alignment" : "center",
+                      "font" : {
+                        "color-blue" : 1.0,
+                        "color-green" : 1.0,
+                        "color-red" : 1.0,
+                        "size" : 64.0,
+                        "tracking" : 0.0,
+                        "name" : "Montserrat",
+                        "weight" : "Regular"
+                      },
+                      "textAttributes" : {
+                        "type" : "textAttributeList",
+                        "keyframes" : [
+                          {
+                            "endTime" : 0,
+                            "time" : 0,
+                            "value" : [{"name":"fontName","rangeEnd":34,"rangeStart":0,"value":"Montserrat","valueType":"string"},{"name":"strikethrough","rangeEnd":34,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontSize","rangeEnd":34,"rangeStart":0,"value":64,"valueType":"double"},{"name":"fontItalic","rangeEnd":34,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fgColor","rangeEnd":34,"rangeStart":0,"value":"(255,255,255,255)","valueType":"color"},{"name":"kerning","rangeEnd":34,"rangeStart":0,"value":0,"valueType":"double"},{"name":"underline","rangeEnd":34,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontWeight","rangeEnd":34,"rangeStart":0,"value":400,"valueType":"int"}],
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "attributes" : {
+                      "autoRotateText" : true
+                    },
+                    "parameters" : {
+                      "translation0" : 35.5795968999998,
+                      "translation1" : -111.920125042857,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 11.3264867571414,
+                      "geometryCrop3" : 0.0
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 737,
+                    "duration" : 150,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 150,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "AppliedThemeId" : "",
+                      "clipSpeedAttribute" : false,
+                      "default-callout-fill-color" : "(252,66,66,255)",
+                      "default-scale" : "1",
+                      "default-text" : "{\\rtf1\\ansi\\ansicpg1252\\cocoartf1561\\cocoasubrtf600\n{\\fonttbl\\f0\\fnil\\fcharset0 Montserrat-Regular;}\n{\\colortbl;\\red255\\green255\\blue255;\\red255\\green255\\blue255;}\n{\\*\\expandedcolortbl;;\\cssrgb\\c100000\\c100000\\c100000;}\n\\pard\\tx560\\tx1120\\tx1680\\tx2240\\tx2800\\tx3360\\tx3920\\tx4480\\tx5040\\tx5600\\tx6160\\tx6720\\pardirnatural\\qc\\partightenfactor0\n\n\\f0\\fs128 \\cf2 \\expnd0\\expndtw0\\kerning0\n\\ulnone Time between years is not constant}",
+                      "effectApplied" : "none"
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 44,
+                    "_type" : "Callout",
+                    "def" : {
+                      "kind" : "remix",
+                      "shape" : "text-arrow",
+                      "style" : "basic",
+                      "fill-color-blue" : 0.0,
+                      "fill-color-green" : 0.0,
+                      "fill-color-opacity" : 1.0,
+                      "fill-color-red" : 0.0,
+                      "height" : 120.0,
+                      "line-spacing" : 0.0,
+                      "stroke-color-blue" : 1.0,
+                      "stroke-color-green" : 1.0,
+                      "stroke-color-opacity" : 1.0,
+                      "stroke-color-red" : 1.0,
+                      "stroke-width" : 0.0,
+                      "tail-x" : 0.0,
+                      "tail-y" : -20.0,
+                      "width" : 400.0,
+                      "word-wrap" : 1.0,
+                      "fill-style" : "solid",
+                      "horizontal-alignment" : "center",
+                      "resize-behavior" : "resizeText",
+                      "stroke-style" : "solid",
+                      "text" : "Data is linked",
+                      "vertical-alignment" : "center",
+                      "font" : {
+                        "color-blue" : 1.0,
+                        "color-green" : 1.0,
+                        "color-red" : 1.0,
+                        "size" : 64.0,
+                        "tracking" : 0.0,
+                        "name" : "Montserrat",
+                        "weight" : "Regular"
+                      },
+                      "textAttributes" : {
+                        "type" : "textAttributeList",
+                        "keyframes" : [
+                          {
+                            "endTime" : 0,
+                            "time" : 0,
+                            "value" : [{"name":"fontName","rangeEnd":14,"rangeStart":0,"value":"Montserrat","valueType":"string"},{"name":"strikethrough","rangeEnd":14,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontItalic","rangeEnd":14,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fgColor","rangeEnd":14,"rangeStart":0,"value":"(255,255,255,255)","valueType":"color"},{"name":"kerning","rangeEnd":14,"rangeStart":0,"value":0,"valueType":"double"},{"name":"fontWeight","rangeEnd":14,"rangeStart":0,"value":400,"valueType":"int"},{"name":"fontSize","rangeEnd":14,"rangeStart":0,"value":64,"valueType":"double"},{"name":"underline","rangeEnd":14,"rangeStart":0,"value":0,"valueType":"int"}],
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "attributes" : {
+                      "autoRotateText" : true
+                    },
+                    "parameters" : {
+                      "translation0" : -0.636270842857243,
+                      "translation1" : -112.5778333,
+                      "rotation2" : 0.323905880378451,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 941,
+                    "duration" : 120,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 120,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "AppliedThemeId" : "",
+                      "clipSpeedAttribute" : false,
+                      "default-callout-fill-color" : "(252,66,66,255)",
+                      "default-scale" : "1",
+                      "effectApplied" : "none"
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 45,
+                    "_type" : "AMFile",
+                    "src" : 10,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "Rec 12-6-2020 10",
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "effects" : [
+
+                    ],
+                    "start" : 1324,
+                    "duration" : 140,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 140,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "effectApplied" : "none"
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 46,
+                    "_type" : "AMFile",
+                    "src" : 15,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "Rec 12-6-2020 15",
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : 0.944777960526316
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1818,
+                    "duration" : 725,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 725,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "effectApplied" : "none"
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 3,
+                "medias" : [
+                  {
+                    "id" : 47,
+                    "_type" : "Callout",
+                    "def" : {
+                      "kind" : "remix",
+                      "shape" : "text-rectangle",
+                      "style" : "basic",
+                      "fill-color-blue" : 0.843137254901961,
+                      "fill-color-green" : 0.843137254901961,
+                      "fill-color-opacity" : 1.0,
+                      "fill-color-red" : 1.0,
+                      "height" : 150.0,
+                      "line-spacing" : 0.0,
+                      "stroke-color-blue" : 0.56078431372549,
+                      "stroke-color-green" : 0.686274509803922,
+                      "stroke-color-opacity" : 1.0,
+                      "stroke-color-red" : 0.0196078431372549,
+                      "stroke-width" : 2.0,
+                      "tail-x" : 0.0,
+                      "tail-y" : -20.0,
+                      "width" : 350.0,
+                      "word-wrap" : 1.0,
+                      "fill-style" : "solid",
+                      "horizontal-alignment" : "center",
+                      "resize-behavior" : "resizeText",
+                      "stroke-style" : "solid",
+                      "text" : "x-axis: \nyear",
+                      "vertical-alignment" : "center",
+                      "font" : {
+                        "color-blue" : 0.266666666666667,
+                        "color-green" : 0.231372549019608,
+                        "color-opacity" : 1.0,
+                        "color-red" : 0.184313725490196,
+                        "size" : 64.0,
+                        "tracking" : 0.0,
+                        "name" : "Montserrat",
+                        "weight" : "Regular"
+                      },
+                      "textAttributes" : {
+                        "type" : "textAttributeList",
+                        "keyframes" : [
+                          {
+                            "endTime" : 0,
+                            "time" : 0,
+                            "value" : [{"name":"underline","rangeEnd":13,"rangeStart":0,"value":0,"valueType":"int"},{"name":"kerning","rangeEnd":13,"rangeStart":0,"value":0,"valueType":"double"},{"name":"fontSize","rangeEnd":13,"rangeStart":0,"value":49,"valueType":"double"},{"name":"strikethrough","rangeEnd":13,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontName","rangeEnd":13,"rangeStart":0,"value":"Montserrat","valueType":"string"},{"name":"fgColor","rangeEnd":13,"rangeStart":0,"value":"(47,59,68,255)","valueType":"color"},{"name":"fontItalic","rangeEnd":13,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontWeight","rangeEnd":13,"rangeStart":0,"value":400,"valueType":"int"}],
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "attributes" : {
+                      "autoRotateText" : true
+                    },
+                    "parameters" : {
+                      "translation0" : -99.6596109000001,
+                      "translation1" : -201.202565185714,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 16.2339407999979,
+                      "geometryCrop1" : 7.47506712857075,
+                      "geometryCrop2" : 52.3668830142795,
+                      "geometryCrop3" : 0.0
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 593,
+                    "duration" : 111,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 111,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "AppliedThemeId" : "",
+                      "clipSpeedAttribute" : false,
+                      "default-callout-fill-color" : "(255,255,255,255)",
+                      "default-scale" : "1",
+                      "default-text" : "{\\rtf1\\ansi\\ansicpg1252\\cocoartf1561\\cocoasubrtf600\n{\\fonttbl\\f0\\fnil\\fcharset0 Montserrat-Regular;}\n{\\colortbl;\\red255\\green255\\blue255;\\red36\\green45\\blue52;}\n{\\*\\expandedcolortbl;;\\cssrgb\\c18431\\c23137\\c26667;}\n\\pard\\tx560\\tx1120\\tx1680\\tx2240\\tx2800\\tx3360\\tx3920\\tx4480\\tx5040\\tx5600\\tx6160\\tx6720\\pardirnatural\\qc\\partightenfactor0\n\n\\f0\\fs128 \\cf2 \\expnd0\\expndtw0\\kerning0\n\\ulnone x-axis: \\\nyear}",
+                      "effectApplied" : "none"
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 48,
+                    "_type" : "Callout",
+                    "def" : {
+                      "kind" : "remix",
+                      "shape" : "text",
+                      "style" : "basic",
+                      "height" : 250.0,
+                      "line-spacing" : 0.0,
+                      "width" : 400.0,
+                      "word-wrap" : 1.0,
+                      "horizontal-alignment" : "center",
+                      "resize-behavior" : "resizeText",
+                      "text" : "Values in table are in thousands of tons",
+                      "vertical-alignment" : "center",
+                      "font" : {
+                        "color-blue" : 1.0,
+                        "color-green" : 1.0,
+                        "color-red" : 1.0,
+                        "size" : 96.0,
+                        "tracking" : 0.0,
+                        "name" : "Montserrat",
+                        "weight" : "Regular"
+                      },
+                      "textAttributes" : {
+                        "type" : "textAttributeList",
+                        "keyframes" : [
+                          {
+                            "endTime" : 0,
+                            "time" : 0,
+                            "value" : [{"name":"fgColor","rangeEnd":40,"rangeStart":0,"value":"(0,0,0,255)","valueType":"color"},{"name":"kerning","rangeEnd":40,"rangeStart":0,"value":0,"valueType":"double"},{"name":"fontName","rangeEnd":40,"rangeStart":0,"value":"Montserrat","valueType":"string"},{"name":"fontSize","rangeEnd":40,"rangeStart":0,"value":36,"valueType":"double"},{"name":"strikethrough","rangeEnd":40,"rangeStart":0,"value":0,"valueType":"int"},{"name":"underline","rangeEnd":40,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontItalic","rangeEnd":40,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontWeight","rangeEnd":40,"rangeStart":0,"value":400,"valueType":"int"}],
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "attributes" : {
+                      "autoRotateText" : true
+                    },
+                    "parameters" : {
+                      "translation0" : 597.807170428571,
+                      "translation1" : -0.177739557142857,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1010,
+                    "duration" : 150,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 150,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "AppliedThemeId" : "",
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "1",
+                      "default-text" : "{\\rtf1\\ansi\\ansicpg1252\\cocoartf1561\\cocoasubrtf600\n{\\fonttbl\\f0\\fnil\\fcharset0 Montserrat-Regular;}\n{\\colortbl;\\red255\\green255\\blue255;\\red255\\green255\\blue255;}\n{\\*\\expandedcolortbl;;\\cssrgb\\c100000\\c100000\\c100000;}\n\\pard\\tx560\\tx1120\\tx1680\\tx2240\\tx2800\\tx3360\\tx3920\\tx4480\\tx5040\\tx5600\\tx6160\\tx6720\\pardirnatural\\qc\\partightenfactor0\n\n\\f0\\fs192 \\cf2 \\expnd0\\expndtw0\\kerning0\n\\ulnone ABC}",
+                      "effectApplied" : "none"
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 49,
+                    "_type" : "Callout",
+                    "def" : {
+                      "kind" : "remix",
+                      "shape" : "speech-bubble2",
+                      "style" : "basic",
+                      "fill-color-blue" : 0.258823529411765,
+                      "fill-color-green" : 0.258823529411765,
+                      "fill-color-opacity" : 1.0,
+                      "fill-color-red" : 0.988235294117647,
+                      "height" : 180.0,
+                      "line-spacing" : 0.0,
+                      "stroke-color-blue" : 1.0,
+                      "stroke-color-green" : 1.0,
+                      "stroke-color-opacity" : 1.0,
+                      "stroke-color-red" : 1.0,
+                      "stroke-width" : 0.0,
+                      "tail-x" : -100.0,
+                      "tail-y" : -200.0,
+                      "width" : 350.0,
+                      "word-wrap" : 1.0,
+                      "fill-style" : "solid",
+                      "horizontal-alignment" : "center",
+                      "resize-behavior" : "resizeText",
+                      "stroke-style" : "solid",
+                      "text" : "Red/pink: don’t routinely recycle",
+                      "vertical-alignment" : "center",
+                      "font" : {
+                        "color-blue" : 1.0,
+                        "color-green" : 1.0,
+                        "color-red" : 1.0,
+                        "size" : 64.0,
+                        "tracking" : 0.0,
+                        "name" : "Montserrat",
+                        "weight" : "Regular"
+                      },
+                      "textAttributes" : {
+                        "type" : "textAttributeList",
+                        "keyframes" : [
+                          {
+                            "endTime" : 0,
+                            "time" : 0,
+                            "value" : [{"name":"fontWeight","rangeEnd":35,"rangeStart":0,"value":400,"valueType":"int"},{"name":"underline","rangeEnd":35,"rangeStart":0,"value":0,"valueType":"int"},{"name":"strikethrough","rangeEnd":35,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontItalic","rangeEnd":35,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fgColor","rangeEnd":35,"rangeStart":0,"value":"(255,255,255,255)","valueType":"color"},{"name":"kerning","rangeEnd":35,"rangeStart":0,"value":0,"valueType":"double"},{"name":"fontSize","rangeEnd":35,"rangeStart":0,"value":64,"valueType":"double"},{"name":"fontName","rangeEnd":35,"rangeStart":0,"value":"Montserrat","valueType":"string"}],
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "attributes" : {
+                      "autoRotateText" : true
+                    },
+                    "parameters" : {
+                      "translation0" : -399.181727557143,
+                      "translation1" : 339.870092471429,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1962,
+                    "duration" : 257,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 257,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "AppliedThemeId" : "",
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "1",
+                      "effectApplied" : "none"
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 50,
+                    "_type" : "Callout",
+                    "def" : {
+                      "kind" : "remix",
+                      "shape" : "text-rectangle",
+                      "style" : "basic",
+                      "fill-color-blue" : 0.843137254901961,
+                      "fill-color-green" : 0.843137254901961,
+                      "fill-color-opacity" : 1.0,
+                      "fill-color-red" : 1.0,
+                      "height" : 150.0,
+                      "line-spacing" : 0.0,
+                      "stroke-color-blue" : 0.56078431372549,
+                      "stroke-color-green" : 0.686274509803922,
+                      "stroke-color-opacity" : 1.0,
+                      "stroke-color-red" : 0.0196078431372549,
+                      "stroke-width" : 2.0,
+                      "tail-x" : 0.0,
+                      "tail-y" : -20.0,
+                      "width" : 350.0,
+                      "word-wrap" : 1.0,
+                      "fill-style" : "solid",
+                      "horizontal-alignment" : "center",
+                      "resize-behavior" : "resizeText",
+                      "stroke-style" : "solid",
+                      "text" : "Hover over slices to show more detail",
+                      "vertical-alignment" : "center",
+                      "font" : {
+                        "color-blue" : 0.266666666666667,
+                        "color-green" : 0.231372549019608,
+                        "color-opacity" : 1.0,
+                        "color-red" : 0.184313725490196,
+                        "size" : 64.0,
+                        "tracking" : 0.0,
+                        "name" : "Montserrat",
+                        "weight" : "Regular"
+                      },
+                      "textAttributes" : {
+                        "type" : "textAttributeList",
+                        "keyframes" : [
+                          {
+                            "endTime" : 0,
+                            "time" : 0,
+                            "value" : [{"name":"strikethrough","rangeEnd":37,"rangeStart":0,"value":0,"valueType":"int"},{"name":"underline","rangeEnd":37,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontWeight","rangeEnd":37,"rangeStart":0,"value":400,"valueType":"int"},{"name":"fgColor","rangeEnd":37,"rangeStart":0,"value":"(47,59,68,255)","valueType":"color"},{"name":"fontName","rangeEnd":37,"rangeStart":0,"value":"Montserrat","valueType":"string"},{"name":"fontSize","rangeEnd":37,"rangeStart":0,"value":64,"valueType":"double"},{"name":"kerning","rangeEnd":37,"rangeStart":0,"value":0,"valueType":"double"},{"name":"fontItalic","rangeEnd":37,"rangeStart":0,"value":0,"valueType":"int"}],
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "attributes" : {
+                      "autoRotateText" : true
+                    },
+                    "parameters" : {
+                      "translation0" : -113.096116885714,
+                      "translation1" : -270.533786685714,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 2259,
+                    "duration" : 131,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 131,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "AppliedThemeId" : "",
+                      "clipSpeedAttribute" : false,
+                      "default-callout-fill-color" : "(255,255,255,255)",
+                      "default-scale" : "1",
+                      "effectApplied" : "none"
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 4,
+                "medias" : [
+                  {
+                    "id" : 51,
+                    "_type" : "Callout",
+                    "def" : {
+                      "kind" : "remix",
+                      "shape" : "speech-bubble2",
+                      "style" : "basic",
+                      "fill-color-blue" : 0.0274509803921569,
+                      "fill-color-green" : 0.568627450980392,
+                      "fill-color-opacity" : 1.0,
+                      "fill-color-red" : 0.396078431372549,
+                      "height" : 180.0,
+                      "line-spacing" : 0.0,
+                      "stroke-color-blue" : 1.0,
+                      "stroke-color-green" : 1.0,
+                      "stroke-color-opacity" : 1.0,
+                      "stroke-color-red" : 1.0,
+                      "stroke-width" : 0.0,
+                      "tail-x" : -100.0,
+                      "tail-y" : -200.0,
+                      "width" : 350.0,
+                      "word-wrap" : 1.0,
+                      "fill-style" : "solid",
+                      "horizontal-alignment" : "center",
+                      "resize-behavior" : "resizeText",
+                      "stroke-style" : "solid",
+                      "text" : "Green: routinely recycle",
+                      "vertical-alignment" : "center",
+                      "font" : {
+                        "color-blue" : 1.0,
+                        "color-green" : 1.0,
+                        "color-red" : 1.0,
+                        "size" : 64.0,
+                        "tracking" : 0.0,
+                        "name" : "Montserrat",
+                        "weight" : "Regular"
+                      },
+                      "textAttributes" : {
+                        "type" : "textAttributeList",
+                        "keyframes" : [
+                          {
+                            "endTime" : 0,
+                            "time" : 0,
+                            "value" : [{"name":"kerning","rangeEnd":24,"rangeStart":0,"value":0,"valueType":"double"},{"name":"fontWeight","rangeEnd":24,"rangeStart":0,"value":400,"valueType":"int"},{"name":"strikethrough","rangeEnd":24,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontName","rangeEnd":24,"rangeStart":0,"value":"Montserrat","valueType":"string"},{"name":"fontItalic","rangeEnd":24,"rangeStart":0,"value":0,"valueType":"int"},{"name":"underline","rangeEnd":24,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fgColor","rangeEnd":24,"rangeStart":0,"value":"(255,255,255,255)","valueType":"color"},{"name":"fontSize","rangeEnd":24,"rangeStart":0,"value":64,"valueType":"double"}],
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "attributes" : {
+                      "autoRotateText" : true
+                    },
+                    "parameters" : {
+                      "translation0" : -175.003837057143,
+                      "translation1" : 104.896800871429,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1962,
+                    "duration" : 257,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 257,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "AppliedThemeId" : "",
+                      "clipSpeedAttribute" : false,
+                      "default-callout-fill-color" : "(252,66,66,255)",
+                      "default-scale" : "1",
+                      "effectApplied" : "none"
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 52,
+                    "_type" : "Callout",
+                    "def" : {
+                      "kind" : "remix",
+                      "shape" : "text-rectangle",
+                      "style" : "basic",
+                      "fill-color-blue" : 0.843137254901961,
+                      "fill-color-green" : 0.843137254901961,
+                      "fill-color-opacity" : 1.0,
+                      "fill-color-red" : 1.0,
+                      "height" : 150.0,
+                      "line-spacing" : 0.0,
+                      "stroke-color-blue" : 0.56078431372549,
+                      "stroke-color-green" : 0.686274509803922,
+                      "stroke-color-opacity" : 1.0,
+                      "stroke-color-red" : 0.0196078431372549,
+                      "stroke-width" : 2.0,
+                      "tail-x" : 0.0,
+                      "tail-y" : -20.0,
+                      "width" : 350.0,
+                      "word-wrap" : 1.0,
+                      "fill-style" : "solid",
+                      "horizontal-alignment" : "center",
+                      "resize-behavior" : "resizeText",
+                      "stroke-style" : "solid",
+                      "text" : "Hover over bars to show more detail as well",
+                      "vertical-alignment" : "center",
+                      "font" : {
+                        "color-blue" : 0.266666666666667,
+                        "color-green" : 0.231372549019608,
+                        "color-opacity" : 1.0,
+                        "color-red" : 0.184313725490196,
+                        "size" : 64.0,
+                        "tracking" : 0.0,
+                        "name" : "Montserrat",
+                        "weight" : "Regular"
+                      },
+                      "textAttributes" : {
+                        "type" : "textAttributeList",
+                        "keyframes" : [
+                          {
+                            "endTime" : 0,
+                            "time" : 0,
+                            "value" : [{"name":"fontWeight","rangeEnd":43,"rangeStart":0,"value":400,"valueType":"int"},{"name":"strikethrough","rangeEnd":43,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontItalic","rangeEnd":43,"rangeStart":0,"value":0,"valueType":"int"},{"name":"underline","rangeEnd":43,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fgColor","rangeEnd":43,"rangeStart":0,"value":"(47,59,68,255)","valueType":"color"},{"name":"fontName","rangeEnd":43,"rangeStart":0,"value":"Montserrat","valueType":"string"},{"name":"kerning","rangeEnd":43,"rangeStart":0,"value":0,"valueType":"double"},{"name":"fontSize","rangeEnd":43,"rangeStart":0,"value":64,"valueType":"double"}],
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "attributes" : {
+                      "autoRotateText" : true
+                    },
+                    "parameters" : {
+                      "translation0" : 598.0,
+                      "translation1" : -237.0,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 2411,
+                    "duration" : 150,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 150,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "AppliedThemeId" : "",
+                      "clipSpeedAttribute" : false,
+                      "default-callout-fill-color" : "(255,255,255,255)",
+                      "default-scale" : "1",
+                      "default-text" : "{\\rtf1\\ansi\\ansicpg1252\\cocoartf1561\\cocoasubrtf600\n{\\fonttbl\\f0\\fnil\\fcharset0 Montserrat-Regular;}\n{\\colortbl;\\red255\\green255\\blue255;\\red36\\green45\\blue52;}\n{\\*\\expandedcolortbl;;\\cssrgb\\c18431\\c23137\\c26667;}\n\\pard\\tx560\\tx1120\\tx1680\\tx2240\\tx2800\\tx3360\\tx3920\\tx4480\\tx5040\\tx5600\\tx6160\\tx6720\\pardirnatural\\qc\\partightenfactor0\n\n\\f0\\fs128 \\cf2 \\expnd0\\expndtw0\\kerning0\n\\ulnone Hover over bars to show more detail as well}",
+                      "effectApplied" : "none"
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              }            ]
+          }
+        }
+      ]
+    },
+    "trackAttributes" : [
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "magnetic" : false,
+        "matte" : 0,
+        "solo" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "trackHeight" : "54"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "magnetic" : false,
+        "matte" : 0,
+        "solo" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "trackHeight" : "54"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "magnetic" : false,
+        "matte" : 0,
+        "solo" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "trackHeight" : "54"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "magnetic" : false,
+        "matte" : 0,
+        "solo" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "trackHeight" : "54"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "magnetic" : false,
+        "matte" : 0,
+        "solo" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "trackHeight" : "54"
+        }
+      }
+    ],
+    "captionAttributes" : {
+      "enabled" : true,
+      "fontName" : "Arial",
+      "fontSize" : 32,
+      "backgroundColor" : [ 0, 0, 0, 204],
+      "foregroundColor" : [ 255, 255, 255, 255],
+      "lang" : "en",
+      "alignment" : 0,
+      "defaultFontSize" : true,
+      "opacity" : 0.5,
+      "backgroundEnabled" : true,
+      "backgroundOnlyAroundText" : true
+    },
+    "backgroundColor" : [ 0, 0, 0, 255],
+    "metadata" : {
+      "RecordingHeight" : "1600",
+      "RecordingWidth" : "2560"
+    }
+  },
+  "metadata" : {
+    "activeThemeId" : "e59eeb42-ccf0-4a36-bdf9-e630fdab686d",
+    "firstMedia" : true,
+    "hasNotifiedAboutHFRMedia" : false
+  }
+}
